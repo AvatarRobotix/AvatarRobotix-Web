@@ -3,10 +3,111 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Avatar Robotix - Innovating the Future with Robotics"
+    />
+    <meta
+      name="keywords"
+      content="robotics, innovation, Avatar Robotix, technology, AI, automation"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
     <title>Avatar Robotix</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/path-to-your-favicon.ico" type="image/x-icon" />
+
+    <!-- Import Fonts or Icons if needed -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+
+    <!-- Basic Internal Styles to Ensure Consistency -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* Reset some basic elements */
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      ul,
+      ol,
+      li,
+      figure,
+      figcaption,
+      blockquote,
+      dl,
+      dd {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+        line-height: 1.5;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      #root {
+        padding: 0px;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- Your main JavaScript file -->
     <script type="module" src="/src/main.jsx"></script>
+
+    <script>
+      function detectZoom() {
+        const zoomLevel = Math.round((window.innerWidth / document.documentElement.clientWidth) * 100);
+        console.log(`Current Zoom Level: ${zoomLevel}%`);
+        
+        let scale = 1;
+
+        if (zoomLevel === 100) {
+          scale = 1; // No change for 100% zoom
+        } else if (zoomLevel === 125) {
+          scale = 0.8; // For 125% zoom, reduce scale to 80%
+        } else if (zoomLevel === 75) {
+          scale = 1.33; // For 75% zoom, increase scale to 133%
+        }
+
+        document.body.style.transform = `scale(${scale})`;
+        document.body.style.transformOrigin = 'top left';
+      }
+
+      window.addEventListener('resize', detectZoom);
+      window.addEventListener('load', detectZoom);
+    </script>
+
+    <!-- Optional: Analytics or other external scripts -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-XXXXXXXXX-X");
+    </script>
   </body>
 </html>
