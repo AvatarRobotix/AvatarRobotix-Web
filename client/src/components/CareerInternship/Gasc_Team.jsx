@@ -2,38 +2,65 @@ import React from "react";
 import { FaLinkedin, FaGithub, FaGoogle, FaMicrosoft } from "react-icons/fa";
 import { motion } from "framer-motion";
 
-
 import iBOY from "../../assets/img/iboy.png";
 import iGIRL from "../../assets/img/igirl.png";
 
 // With BG Image
-import Raghu from "../../assets/profiles/BG/AI_02.jpg";
-import Hari from "../../assets/profiles/BG/AI_06.jpg";
+// import Raghu from "../../assets/profiles/BG/AI_02.jpg";
+// import Akash from "../../assets/profiles/BG/AI_03.jpg";
+// import Abi from "../../assets/profiles/BG/AI_04.jpg";
+// import Hari from "../../assets/profiles/BG/AI_06.jpg";
+// import Kabhi from "../../assets/profiles/BG/AI_07.jpg";
+// import Pavi from "../../assets/profiles/BG/AI_08.jpg";
 
-import Logesh from "../../assets/profiles/BG/BCA_01.jpg";
-import Monish from "../../assets/profiles/BG/BCA_02.jpg";
-import Sharmitha from "../../assets/profiles/BG/BCA_03.jpg";
-import Poomalar from "../../assets/profiles/BG/BCA_04.jpg";
+// import Logesh from "../../assets/profiles/BG/BCA_01.jpg";
+// import Monish from "../../assets/profiles/BG/BCA_02.jpg";
+// import Sharmitha from "../../assets/profiles/BG/BCA_03.jpg";
+// import Poomalar from "../../assets/profiles/BG/BCA_04.jpg";
 
-import Rakshu from "../../assets/profiles/BG/IoT_01.jpg";
-import Bhooshitha from "../../assets/profiles/BG/IoT_02.jpg";
-import Dhanalakshmi from "../../assets/profiles/BG/IoT_03.jpg";
-import Nikitha from "../../assets/profiles/BG/IoT_04.jpg";
+// import Rakshu from "../../assets/profiles/BG/IoT_01.jpg";
+// import Bhooshitha from "../../assets/profiles/BG/IoT_02.jpg";
+// import Dhanalakshmi from "../../assets/profiles/BG/IoT_03.jpg";
+// import Nikitha from "../../assets/profiles/BG/IoT_04.jpg";
+
+// import Arshath from "../../assets/profiles/BG/CS_01.png";
+// import Nithyanandhan from "../../assets/profiles/BG/CS_02.png";
+
+// Without BG Image
+import Raghu from "../../assets/profiles/Non_BG/AI_02.png";
+import Akash from "../../assets/profiles/Non_BG/AI_03.png";
+import Abi from "../../assets/profiles/Non_BG/AI_04.png";
+import Hari from "../../assets/profiles/Non_BG/AI_06.png";
+import Kabhi from "../../assets/profiles/Non_BG/AI_07.png";
+import Pavi from "../../assets/profiles/Non_BG/AI_08.png";
+import Kaviya from "../../assets/profiles/Non_BG/AI_09.png";
+
+import Logesh from "../../assets/profiles/Non_BG/BCA_01.png";
+import Monish from "../../assets/profiles/Non_BG/BCA_02.png";
+import Sharmitha from "../../assets/profiles/Non_BG/BCA_03.png";
+import Poomalar from "../../assets/profiles/Non_BG/BCA_04.png";
+
+import Rakshu from "../../assets/profiles/Non_BG/IoT_01.png";
+import Bhooshitha from "../../assets/profiles/Non_BG/IoT_02.png";
+import Dhanalakshmi from "../../assets/profiles/Non_BG/IoT_03.png";
+import Nikitha from "../../assets/profiles/Non_BG/IoT_04.png";
+
+import Arshath from "../../assets/profiles/Non_BG/CS_01.png";
+import Nithyanandhan from "../../assets/profiles/Non_BG/CS_02.png";
 
 const students = [
   {
     name: "Raghu",
     department: "Department of Artificial Intelligence",
     degree: "B.Sc. CS AI & DS",
-    email: "raghu@example.com",
+    email: "mailto:raghu@example.com",
     year: "Year 1",
     image: Raghu,
     socialMedia: {
-      linkedin:
-        "https://www.linkedin.com/in/raghu-a-a12275238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      linkedin: "https://www.linkedin.com/in/raghu-a-a12275238",
       // github: "https://github.com/raghu",
-      email: "raghuarunkumar30@gmail.com"
-      // outlook: "https://outlook.com/raghu"
+      email: "mailto:raghuarunkumar30@gmail.com"
+      // outlook: "mailto:https://outlook.com/raghu"
     },
     gender: "male"
   },
@@ -41,14 +68,14 @@ const students = [
     name: "Jaiganesh",
     department: "Department of Artificial Intelligence",
     degree: "B.Sc. CS AI & DS",
-    email: "jaiganesh.d@example.com",
+    email: "mailto:jaiganesh.d@example.com",
     year: "Year 1",
     image: iBOY,
     socialMedia: {
-      linkedin: "https://linkedin.com/in/jaiganeshd",
+      linkedin: "https://www.linkedin.com/in/jaiganesh-d-0184a6325/",
       github: "https://github.com/jaiganeshd",
-      email: "mailto:jaiganesh.d@example.com",
-      outlook: "https://outlook.com/jaiganeshd"
+      email: "mailto:jaiganeshd27@gmail.com",
+      outlook: "mailto:jaiganesh.dev@outlook.com"
     },
     gender: "male"
   },
@@ -56,15 +83,14 @@ const students = [
     name: "Akash Deep",
     department: "Department of Artificial Intelligence",
     degree: "B.Sc. CS AI & DS",
-    email: "akash.deep@example.com",
+    email: "mailto:akash.deep@example.com",
     year: "Year 1",
-    image: iBOY,
+    image: Akash,
     socialMedia: {
-      linkedin:
-        "https://www.linkedin.com/in/akash-deep-7624b9298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      linkedin: "https://www.linkedin.com/in/akash-deep-7624b9298",
       // github: "https://github.com/akashdeep",
-      // email: "mailto:akash.deep@example.com",
-      outlook: "AkashdeepInsights@outlook.com"
+      // email: "mailto:mailto:akash.deep@example.com",
+      outlook: "mailto:AkashdeepInsights@outlook.com"
     },
     gender: "male"
   },
@@ -72,15 +98,14 @@ const students = [
     name: "Pavithra",
     department: "Department of Artificial Intelligence",
     degree: "B.Sc. CS AI & DS",
-    email: "pavithra@example.com",
+    email: "mailto:pavithra@example.com",
     year: "Year 1",
-    image: iGIRL,
+    image: Pavi,
     socialMedia: {
-      linkedin:
-        "https://www.linkedin.com/in/pavithra-kathirvel-a60248302?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      linkedin: "https://www.linkedin.com/in/pavithra-kathirvel-a60248302",
       // github: "https://github.com/pavithra",
-      email: "mailto:pavithra@example.com",
-      outlook: "pavithrakathirvel@outlook.com"
+      email: "mailto:mailto:pavithra@example.com",
+      outlook: "mailto:pavithrakathirvel@outlook.com"
     },
     gender: "female"
   },
@@ -88,15 +113,14 @@ const students = [
     name: "Kabhini",
     department: "Department of Artificial Intelligence",
     degree: "B.Sc. CS AI & DS",
-    email: "kabhini@example.com",
+    email: "mailto:kabhini@example.com",
     year: "Year 1",
-    image: iGIRL,
+    image: Kabhi,
     socialMedia: {
-      linkedin:
-        "https://www.linkedin.com/in/kabhini-arumugam-2097b6302?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      linkedin: "https://www.linkedin.com/in/kabhini-arumugam-2097b6302",
       // github: "https://github.com/kabhini",
-      email: "kabhiniinfotech@gmail.com"
-      // outlook: "https://outlook.com/kabhini"
+      email: "mailto:kabhiniinfotech@gmail.com"
+      // outlook: "mailto:https://outlook.com/kabhini"
     },
     gender: "female"
   },
@@ -104,15 +128,14 @@ const students = [
     name: "Abinesh",
     department: "Department of Artificial Intelligence",
     degree: "B.Sc. CS AI & DS",
-    email: "abinesh@example.com",
+    email: "mailto:abinesh@example.com",
     year: "Year 1",
-    image: iBOY,
+    image: Abi,
     socialMedia: {
-      linkedin:
-        "https://www.linkedin.com/in/abinesh-sp-8a54502ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      linkedin: "https://www.linkedin.com/in/abinesh-sp-8a54502ab",
       // github: "https://github.com/abinesh",
-      // email: "mailto:abinesh@example.com",
-      outlook: "abineshprakash@outlook.com"
+      // email: "mailto:mailto:abinesh@example.com",
+      outlook: "mailto:abineshprakash@outlook.com"
     },
     gender: "male"
   },
@@ -120,15 +143,14 @@ const students = [
     name: "Hari Haran",
     department: "Department of Artificial Intelligence",
     degree: "B.Sc. CS AI & DS",
-    email: "hari.haran@example.com",
+    email: "mailto:hari.haran@example.com",
     year: "Year 1",
     image: Hari,
     socialMedia: {
-      linkedin:
-        "https://www.linkedin.com/in/hari-hari-034500298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      linkedin: "https://www.linkedin.com/in/hari-hari-034500298",
       // github: "https://github.com/hariharan",
-      // email: "mailto:hari.haran@example.com",
-      outlook: "hariharan.tirupur@outlook.com"
+      // email: "mailto:mailto:hari.haran@example.com",
+      outlook: "mailto:hariharan.tirupur@outlook.com"
     },
     gender: "male"
   },
@@ -136,15 +158,14 @@ const students = [
     name: "Ranjith",
     department: "Department of Artificial Intelligence",
     degree: "B.Sc. CS AI & DS",
-    email: "ranjith@example.com",
+    email: "mailto:ranjith@example.com",
     year: "Year 1",
     image: iBOY,
     socialMedia: {
-      linkedin:
-        "https://www.linkedin.com/in/ranjith-n-0621b9319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      linkedin: "https://www.linkedin.com/in/ranjith-n-0621b9319",
       // github: "https://github.com/ranjith",
-      // email: "mailto:ranjith@example.com",
-      outlook: "ranjithnandhagopal@outlook.com"
+      // email: "mailto:mailto:ranjith@example.com",
+      outlook: "mailto:ranjithnandhagopal@outlook.com"
     },
     gender: "male"
   },
@@ -152,15 +173,14 @@ const students = [
     name: "Kaviya",
     department: "Department of Artificial Intelligence",
     degree: "B.Sc. CS AI & DS",
-    email: "kaviya@example.com",
+    email: "mailto:kaviya@example.com",
     year: "Year 1",
-    image: iGIRL,
+    image: Kaviya,
     socialMedia: {
-      linkedin:
-        "https://www.linkedin.com/in/kaviya-s-621b88302?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      linkedin: "https://www.linkedin.com/in/kaviya-s-621b88302",
       // github: "https://github.com/kaviya",
-      email: "kaviyasaravanan777@gmail.com"
-      // outlook: "https://outlook.com/kaviya"
+      email: "mailto:kaviyasaravanan777@gmail.com"
+      // outlook: "mailto:https://outlook.com/kaviya"
     },
     gender: "female"
   },
@@ -169,15 +189,14 @@ const students = [
     name: "Rakshana Devi",
     department: "Department of Internet of Things",
     degree: "B.SC IOT",
-    email: "rakshana.devi@example.com",
+    email: "mailto:rakshana.devi@example.com",
     year: "Year 1",
     image: Rakshu,
     socialMedia: {
-      linkedin:
-        "https://www.linkedin.com/in/rakshu-offcial-034653312?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      linkedin: "https://www.linkedin.com/in/rakshu-offcial-034653312",
       // github: "https://github.com/rakshana-devi",
-      email: "rakshuoffical@gamil.com"
-      // outlook: "https://outlook.com/rakshana-devi"
+      email: "mailto:rakshuoffical@gamil.com"
+      // outlook: "mailto:https://outlook.com/rakshana-devi"
     },
     gender: "female"
   },
@@ -185,15 +204,14 @@ const students = [
     name: "Dhanalakshmi",
     department: "Department of Internet of Things",
     degree: "B.SC IOT",
-    email: "dhanalakshmi@example.com",
+    email: "mailto:dhanalakshmi@example.com",
     year: "Year 1",
     image: Dhanalakshmi,
     socialMedia: {
-      linkedin:
-        "https://www.linkedin.com/in/dhana-kumar-13971a31a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      linkedin: "https://www.linkedin.com/in/dhana-kumar-13971a31a",
       // github: "https://github.com/dhanalakshmi",
-      email: "dhanalakshmikumer@gmail.com"
-      // outlook: "https://outlook.com/dhanalakshmi"
+      email: "mailto:dhanalakshmikumer@gmail.com"
+      // outlook: "mailto:https://outlook.com/dhanalakshmi"
     },
     gender: "female"
   },
@@ -201,14 +219,14 @@ const students = [
     name: "Nikitha Sri",
     department: "Department of Internet of Things",
     degree: "B.SC IOT",
-    email: "nikitha.sri@example.com",
+    email: "mailto:nikitha.sri@example.com",
     year: "Year 1",
     image: Nikitha,
     socialMedia: {
       // linkedin: "https://linkedin.com/in/nikitha-sri",
       // github: "https://github.com/nikitha-sri",
-      email: "nikithasriayyasamy@gmail.com"
-      // outlook: "https://outlook.com/nikitha-sri"
+      email: "mailto:nikithasriayyasamy@gmail.com"
+      // outlook: "mailto:https://outlook.com/nikitha-sri"
     },
     gender: "female"
   },
@@ -216,15 +234,14 @@ const students = [
     name: "Bhooshitha",
     department: "Department of Internet of Things",
     degree: "B.SC IOT",
-    email: "bhooshitha@example.com",
+    email: "mailto:bhooshitha@example.com",
     year: "Year 1",
     image: Bhooshitha,
     socialMedia: {
-      linkedin:
-        "https://www.linkedin.com/in/bhooshitha-keseven-b33556324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      linkedin: "https://www.linkedin.com/in/bhooshitha-keseven-b33556324",
       // github: "https://github.com/bhooshitha",
-      email: "bhooshithakeseven@gamil.com"
-      // outlook: "https://outlook.com/bhooshitha"
+      email: "mailto:bhooshithakeseven@gamil.com"
+      // outlook: "mailto:https://outlook.com/bhooshitha"
     },
     gender: "female"
   },
@@ -233,15 +250,14 @@ const students = [
     name: "Logesh",
     department: "Department of Computer Application",
     degree: "BCA",
-    email: "logesh@example.com",
+    email: "mailto:logesh@example.com",
     year: "Year 1",
     image: Logesh,
     socialMedia: {
-      linkedin:
-        "https://www.linkedin.com/in/loges-waran-k-1152682aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      linkedin: "https://www.linkedin.com/in/loges-waran-k-1152682aa",
       // github: "https://github.com/logesh",
-      // email: "mailto:logesh@example.com",
-      outlook: "LogeswaranKuppusamy@outlook.com"
+      // email: "mailto:mailto:logesh@example.com",
+      outlook: "mailto:LogeswaranKuppusamy@outlook.com"
     },
     gender: "male"
   },
@@ -249,15 +265,14 @@ const students = [
     name: "Monish S",
     department: "Department of Computer Application",
     degree: "BCA",
-    email: "monish.s@example.com",
+    email: "mailto:monish.s@example.com",
     year: "Year 1",
     image: Monish,
     socialMedia: {
-      linkedin:
-        "https://www.linkedin.com/in/monish-s16?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      linkedin: "https://www.linkedin.com/in/monish-s16",
       // github: "https://github.com/monishs",
-      // email: "mailto:monish.s@example.com",
-      outlook: "monishsadhasivam@outlook.com"
+      // email: "mailto:mailto:monish.s@example.com",
+      outlook: "mailto:monishsadhasivam@outlook.com"
     },
     gender: "male"
   },
@@ -265,15 +280,14 @@ const students = [
     name: "Sharmitha",
     department: "Department of Computer Application",
     degree: "BCA",
-    email: "sharmitha@example.com",
+    email: "mailto:sharmitha@example.com",
     year: "Year 1",
     image: Sharmitha,
     socialMedia: {
-      linkedin:
-        "https://www.linkedin.com/in/sharmitha-m-17055a324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      linkedin: "https://www.linkedin.com/in/sharmitha-m-17055a324",
       // github: "https://github.com/sharmitha",
-      // email: "mailto:sharmitha@example.com",
-      outlook: "sharmithamurugan@outlook.com"
+      // email: "mailto:mailto:sharmitha@example.com",
+      outlook: "mailto:sharmithamurugan@outlook.com"
     },
     gender: "female"
   },
@@ -281,15 +295,14 @@ const students = [
     name: "Poomalar",
     department: "Department of Computer Application",
     degree: "BCA",
-    email: "poomalar@example.com",
+    email: "mailto:poomalar@example.com",
     year: "Year 1",
     image: Poomalar,
     socialMedia: {
-      linkedin:
-        "https://www.linkedin.com/in/poomalar-t-966b52323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      linkedin: "https://www.linkedin.com/in/poomalar-t-966b52323",
       // github: "https://github.com/poomalar",
-      // email: "mailto:poomalar@example.com",
-      outlook: "poomalart@outlook.com"
+      // email: "mailto:mailto:poomalar@example.com",
+      outlook: "mailto:poomalart@outlook.com"
     },
     gender: "female"
   },
@@ -298,15 +311,14 @@ const students = [
     name: "Arshath",
     department: "Department of Computer Science",
     degree: "B.SC CS",
-    email: "arshath@example.com",
+    email: "mailto:arshath@example.com",
     year: "Year 1",
-    image: iBOY,
+    image: Arshath,
     socialMedia: {
-      linkedin:
-        "https://www.linkedin.com/in/arshath-s-a923b2290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      linkedin: "https://www.linkedin.com/in/arshath-s-a923b2290",
       // github: "https://github.com/arshath",
-      email: "arshathsheikabdullah@gmail.com"
-      // outlook: "https://outlook.com/arshath"
+      email: "mailto:arshathsheikabdullah@gmail.com"
+      // outlook: "mailto:https://outlook.com/arshath"
     },
     gender: "male"
   },
@@ -314,15 +326,14 @@ const students = [
     name: "Nithyanandhan",
     department: "Department of Computer Science",
     degree: "B.SC CS",
-    email: "nithyanandhan@example.com",
+    email: "mailto:nithyanandhan@example.com",
     year: "Year 1",
-    image: iBOY,
+    image: Nithyanandhan,
     socialMedia: {
-      linkedin:
-        "https://www.linkedin.com/in/nithyanandhan-muthu-58281131a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      linkedin: "https://www.linkedin.com/in/nithyanandhan-muthu-58281131a",
       // github: "https://github.com/nithyanandhan",
-      email: "nithyanandhanmuthu@gamil.com"
-      // outlook: "https://outlook.com/nithyanandhan"
+      email: "mailto:nithyanandhanmuthu@gamil.com"
+      // outlook: "mailto:https://outlook.com/nithyanandhan"
     },
     gender: "male"
   }
@@ -349,10 +360,16 @@ const StudentCard = ({ student }) => (
       />
     </div>
     <div className="p-4 text-left">
-      <h3 className="text-2xl font-medium mb-2">{student.name}</h3>
-      <p className="text-sm mb-1 truncate">{student.department}</p>
-      <p className="text-sm mb-2 truncate">{student.degree}</p>
-      <div className="flex justify-center gap-4">
+      <h3 className="text-lg sm:text-xl md:text-2xl font-medium mb-2">
+        {student.name}
+      </h3>
+      <p className="text-xs sm:text-sm md:text-base mb-1 truncate">
+        {student.department}
+      </p>
+      <p className="text-xs sm:text-sm md:text-base mb-2 truncate">
+        {student.degree}
+      </p>
+      <div className="flex justify-center gap-2 sm:gap-4">
         {student.socialMedia.linkedin && (
           <a
             href={student.socialMedia.linkedin}
@@ -361,7 +378,7 @@ const StudentCard = ({ student }) => (
             rel="noopener noreferrer"
             aria-label="LinkedIn"
           >
-            <FaLinkedin size={24} />
+            <FaLinkedin size={20} />
           </a>
         )}
         {student.socialMedia.github && (
@@ -372,7 +389,7 @@ const StudentCard = ({ student }) => (
             rel="noopener noreferrer"
             aria-label="GitHub"
           >
-            <FaGithub size={24} />
+            <FaGithub size={20} />
           </a>
         )}
         {student.socialMedia.email && (
@@ -383,7 +400,7 @@ const StudentCard = ({ student }) => (
             rel="noopener noreferrer"
             aria-label="Email"
           >
-            <FaGoogle size={24} />
+            <FaGoogle size={20} />
           </a>
         )}
         {student.socialMedia.outlook && (
@@ -394,7 +411,7 @@ const StudentCard = ({ student }) => (
             rel="noopener noreferrer"
             aria-label="Outlook"
           >
-            <FaMicrosoft size={24} />
+            <FaMicrosoft size={20} />
           </a>
         )}
       </div>
@@ -404,8 +421,8 @@ const StudentCard = ({ student }) => (
 
 const GASC_Team = () => {
   return (
-    <div className="px-8 py-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+    <div className="p-4 sm:p-6 md:p-8 lg:p-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6 md:gap-8 lg:gap-10">
         {sortedStudents.map((student, index) => (
           <StudentCard key={index} student={student} />
         ))}
@@ -413,5 +430,4 @@ const GASC_Team = () => {
     </div>
   );
 };
-
 export default GASC_Team;

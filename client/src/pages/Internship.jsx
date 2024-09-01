@@ -17,7 +17,7 @@ const buttonAnimation = {
 
 const scrollToRef = (ref) => {
   window.scrollTo({
-    top: ref.current.offsetTop - 80, 
+    top: ref.current.offsetTop - 80,
     behavior: "smooth"
   });
 };
@@ -45,29 +45,31 @@ const Internship = () => {
     <div className="relative">
       {/* Header Section with Clickable Columns */}
       <section
-        className="py-20 px-6 h-[60vh] text-center flex flex-col justify-center items-center bg-no-repeat bg-center bg-cover"
+        className="py-12 px-4 md:py-20 md:px-6 lg:py-24 lg:px-8 h-[60vh] text-center flex flex-col justify-center items-center bg-no-repeat bg-center bg-cover"
         style={{ backgroundImage: "url(/path-to-your-image.jpg)" }}
       >
         <motion.div
           initial="hidden"
           animate="visible"
           variants={textAnimation}
-          className="mb-12"
+          className="mb-6 md:mb-12"
         >
-          <h1 className="text-6xl font-light ">Our Collaborations</h1>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-light">
+            Our Collaborations
+          </h1>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
           <motion.div
             initial="hidden"
             animate="visible"
             variants={textAnimation}
-            className="relative cursor-pointer p-8 bg-[#b4a0ff] bg-opacity-70 backdrop-blur-md rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+            className="relative cursor-pointer p-6 md:p-8 bg-[#b4a0ff] bg-opacity-70 backdrop-blur-md rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
           >
-            <h2 className="text-3xl font-medium mb-4 text-gray-800">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-normal mb-4 text-gray-800">
               Gobi Arts and Science College
             </h2>
-            <p className="text-base leading-relaxed mb-6 text-gray-600">
+            <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-6 text-gray-600">
               Discover our collaboration with Gobi Arts and Science College...
             </p>
             <div className="flex justify-center">
@@ -76,7 +78,7 @@ const Internship = () => {
                 whileTap="tap"
                 variants={buttonAnimation}
                 onClick={() => handleExploreClick(gascRef)}
-                className="bg-[#190b48] text-white px-5 py-3 rounded-lg shadow-md hover:bg-[#a68eff] hover:text-black hover:font-medium transition-colors duration-300"
+                className="bg-[#190b48] text-white px-4 py-2 md:px-5 md:py-3 rounded-lg shadow-md hover:bg-[#a68eff] hover:text-black hover:font-medium transition-colors duration-300"
               >
                 Explore
               </motion.button>
@@ -87,12 +89,12 @@ const Internship = () => {
             initial="hidden"
             animate="visible"
             variants={textAnimation}
-            className="relative cursor-pointer p-8 bg-[#b4a0ff] bg-opacity-70 backdrop-blur-md rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+            className="relative cursor-pointer p-6 md:p-8 bg-[#b4a0ff] bg-opacity-70 backdrop-blur-md rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
           >
-            <h2 className="text-3xl font-medium mb-4 text-gray-800">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-normal mb-4 text-gray-800">
               KSR College, Tiruchengode
             </h2>
-            <p className="text-base leading-relaxed mb-6 text-gray-600">
+            <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-6 text-gray-600">
               Explore our partnership with KSR College...
             </p>
             <div className="flex justify-center">
@@ -101,7 +103,7 @@ const Internship = () => {
                 whileTap="tap"
                 variants={buttonAnimation}
                 onClick={() => handleExploreClick(ksrRef)}
-                className="bg-[#190b48] text-white px-5 py-3 rounded-lg shadow-md hover:bg-[#a68eff] hover:text-black hover:font-medium transition-colors duration-300"
+                className="bg-[#190b48] text-white px-4 py-2 md:px-5 md:py-3 rounded-lg shadow-md hover:bg-[#a68eff] hover:text-black hover:font-medium transition-colors duration-300"
               >
                 Explore
               </motion.button>
@@ -110,10 +112,13 @@ const Internship = () => {
         </div>
       </section>
 
-      <hr />
+      <hr className="my-8 border-gray-300" />
 
       {/* Content Section for GASC */}
-      <section ref={gascRef} className="py-20 px-6 ">
+      <section
+        ref={gascRef}
+        className="py-12 px-4 md:py-16 md:px-6 lg:py-20 lg:px-8"
+      >
         <motion.div
           ref={gascInViewRef}
           initial="hidden"
@@ -121,10 +126,10 @@ const Internship = () => {
           variants={textAnimation}
           className="text-center"
         >
-          <h1 className="text-6xl font-light mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-light mb-6">
             Gobi Arts and Science College, Gobi
           </h1>
-          <p className="text-lg leading-relaxed mx-auto max-w-7xl">
+          <p className="text-base md:text-lg lg:text-xl leading-relaxed mx-auto max-w-7xl">
             At <span className="font-bold">Avatar Robotix</span>, we value the
             exceptional talent and innovative spirit of students...
           </p>
@@ -132,10 +137,13 @@ const Internship = () => {
         <Gasc_Team />
       </section>
 
-      <hr className="my-16 border-gray-300" />
+      <hr className="my-8 border-gray-300" />
 
       {/* Content Section for KSR */}
-      <section ref={ksrRef} className="py-20 px-6 ">
+      <section
+        ref={ksrRef}
+        className="py-12 px-4 md:py-16 md:px-6 lg:py-20 lg:px-8"
+      >
         <motion.div
           ref={ksrInViewRef}
           initial="hidden"
@@ -143,10 +151,10 @@ const Internship = () => {
           variants={textAnimation}
           className="text-center"
         >
-          <h1 className="text-6xl font-light mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-light mb-6">
             KSR College, Tiruchengode
           </h1>
-          <p className="text-lg leading-relaxed mx-auto max-w-7xl">
+          <p className="text-base md:text-lg lg:text-xl leading-relaxed mx-auto max-w-7xl">
             At <span className="font-bold">Avatar Robotix</span>, we value the
             exceptional talent and innovative spirit of students...
           </p>

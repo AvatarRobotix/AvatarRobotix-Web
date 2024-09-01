@@ -3,9 +3,6 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { FaLinkedin, FaTwitter, FaFacebook } from "react-icons/fa";
 
-import iBOY from "../../assets/img/iboy.png";
-import iBOY_0 from "../../assets/img/iboy_0.webp";
-
 // With BG Image
 import CEO from "../../assets/profiles/BG/CEO.jpg";
 import CoFo from "../../assets/profiles/BG/Co-Fo.jpg";
@@ -40,7 +37,7 @@ const Ceo_Co = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         />
         {/* Content Section */}
-        <div className="flex justify-center items-center w-full md:w-1/2 p-6 md:p-8">
+        <div className="flex justify-center items-center w-full md:w-1/2 p-1 md:p-8">
           <motion.div
             className="w-full rounded-2xl p-6 md:p-8 flex flex-col justify-center items-center text-center bg-[#a68eff] md:bg-[#a68eff]"
             initial={{ y: 100 }}
@@ -90,14 +87,14 @@ const Ceo_Co = () => {
 
       {/* Second Card */}
       <motion.div
-        className="relative text-center shadow-lg bg-[#090518] rounded-2xl overflow-hidden flex flex-col md:flex-row w-full h-auto md:h-screen"
+        className="relative text-center shadow-lg bg-[#090518] bg-custom-radial bg-blend-multiply rounded-2xl overflow-hidden flex flex-col md:flex-row w-full h-auto md:h-screen"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: inView2 ? 1 : 0, scale: inView2 ? 1 : 0.9 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
         ref={ref2}
       >
         {/* Content Section */}
-        <div className="flex justify-center items-center w-full md:w-1/2 p-6 md:p-8 order-2 md:order-1">
+        <div className="flex justify-center items-center w-full md:w-1/2 p-1 md:p-8 order-2 md:order-1">
           <motion.div
             className="w-full rounded-2xl p-6 md:p-8 flex flex-col justify-center items-center text-center bg-[#a68eff] md:bg-[#a68eff]"
             initial={{ y: 100 }}

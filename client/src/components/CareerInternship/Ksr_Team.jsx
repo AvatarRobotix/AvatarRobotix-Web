@@ -6,18 +6,47 @@ import iBOY from "../../assets/img/iboy.png";
 import iGIRL from "../../assets/img/igirl.png";
 
 // With BG Image
-import Raghu from "../../assets/profiles/BG/AI_02.jpg";
-import Hari from "../../assets/profiles/BG/AI_06.jpg";
+// import Raghu from "../../assets/profiles/BG/AI_02.jpg";
+// import Akash from "../../assets/profiles/BG/AI_03.jpg";
+// import Abi from "../../assets/profiles/BG/AI_04.jpg";
+// import Hari from "../../assets/profiles/BG/AI_06.jpg";
+// import Kabhi from "../../assets/profiles/BG/AI_07.jpg";
+// import Pavi from "../../assets/profiles/BG/AI_08.jpg";
 
-import Logesh from "../../assets/profiles/BG/BCA_01.jpg";
-import Monish from "../../assets/profiles/BG/BCA_02.jpg";
-import Sharmitha from "../../assets/profiles/BG/BCA_03.jpg";
-import Poomalar from "../../assets/profiles/BG/BCA_04.jpg";
+// import Logesh from "../../assets/profiles/BG/BCA_01.jpg";
+// import Monish from "../../assets/profiles/BG/BCA_02.jpg";
+// import Sharmitha from "../../assets/profiles/BG/BCA_03.jpg";
+// import Poomalar from "../../assets/profiles/BG/BCA_04.jpg";
 
-import Rakshu from "../../assets/profiles/BG/IoT_01.jpg";
-import Bhooshitha from "../../assets/profiles/BG/IoT_02.jpg";
-import Dhanalakshmi from "../../assets/profiles/BG/IoT_03.jpg";
-import Nikitha from "../../assets/profiles/BG/IoT_04.jpg";
+// import Rakshu from "../../assets/profiles/BG/IoT_01.jpg";
+// import Bhooshitha from "../../assets/profiles/BG/IoT_02.jpg";
+// import Dhanalakshmi from "../../assets/profiles/BG/IoT_03.jpg";
+// import Nikitha from "../../assets/profiles/BG/IoT_04.jpg";
+
+// import Arshath from "../../assets/profiles/BG/CS_01.png";
+// import Nithyanandhan from "../../assets/profiles/BG/CS_02.png";
+
+// Without BG Image
+import Raghu from "../../assets/profiles/Non_BG/AI_02.png";
+import Akash from "../../assets/profiles/Non_BG/AI_03.png";
+import Abi from "../../assets/profiles/Non_BG/AI_04.png";
+import Hari from "../../assets/profiles/Non_BG/AI_06.png";
+import Kabhi from "../../assets/profiles/Non_BG/AI_07.png";
+import Pavi from "../../assets/profiles/Non_BG/AI_08.png";
+import Kaviya from "../../assets/profiles/Non_BG/AI_09.png";
+
+import Logesh from "../../assets/profiles/Non_BG/BCA_01.png";
+import Monish from "../../assets/profiles/Non_BG/BCA_02.png";
+import Sharmitha from "../../assets/profiles/Non_BG/BCA_03.png";
+import Poomalar from "../../assets/profiles/Non_BG/BCA_04.png";
+
+import Rakshu from "../../assets/profiles/Non_BG/IoT_01.png";
+import Bhooshitha from "../../assets/profiles/Non_BG/IoT_02.png";
+import Dhanalakshmi from "../../assets/profiles/Non_BG/IoT_03.png";
+import Nikitha from "../../assets/profiles/Non_BG/IoT_04.png";
+
+import Arshath from "../../assets/profiles/Non_BG/CS_01.png";
+import Nithyanandhan from "../../assets/profiles/Non_BG/CS_02.png";
 
 const students = [
   {
@@ -57,7 +86,7 @@ const students = [
     degree: "B.Sc. CS AI & DS",
     email: "akash.deep@example.com",
     year: "Year 1",
-    image: iBOY,
+    image: Akash,
     socialMedia: {
       linkedin:
         "https://www.linkedin.com/in/akash-deep-7624b9298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -73,7 +102,7 @@ const students = [
     degree: "B.Sc. CS AI & DS",
     email: "pavithra@example.com",
     year: "Year 1",
-    image: iGIRL,
+    image: Pavi,
     socialMedia: {
       linkedin:
         "https://www.linkedin.com/in/pavithra-kathirvel-a60248302?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -89,7 +118,7 @@ const students = [
     degree: "B.Sc. CS AI & DS",
     email: "kabhini@example.com",
     year: "Year 1",
-    image: iGIRL,
+    image: Kabhi,
     socialMedia: {
       linkedin:
         "https://www.linkedin.com/in/kabhini-arumugam-2097b6302?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -105,7 +134,7 @@ const students = [
     degree: "B.Sc. CS AI & DS",
     email: "abinesh@example.com",
     year: "Year 1",
-    image: iBOY,
+    image: Abi,
     socialMedia: {
       linkedin:
         "https://www.linkedin.com/in/abinesh-sp-8a54502ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -153,7 +182,7 @@ const students = [
     degree: "B.Sc. CS AI & DS",
     email: "kaviya@example.com",
     year: "Year 1",
-    image: iGIRL,
+    image: Kaviya,
     socialMedia: {
       linkedin:
         "https://www.linkedin.com/in/kaviya-s-621b88302?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -299,7 +328,7 @@ const students = [
     degree: "B.SC CS",
     email: "arshath@example.com",
     year: "Year 1",
-    image: iBOY,
+    image: Arshath,
     socialMedia: {
       linkedin:
         "https://www.linkedin.com/in/arshath-s-a923b2290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -315,7 +344,7 @@ const students = [
     degree: "B.SC CS",
     email: "nithyanandhan@example.com",
     year: "Year 1",
-    image: iBOY,
+    image: Nithyanandhan,
     socialMedia: {
       linkedin:
         "https://www.linkedin.com/in/nithyanandhan-muthu-58281131a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -337,7 +366,7 @@ const StudentCard = ({ student }) => (
   <motion.div
     className={`border border-[#dadada] shadow-[#7b7b7b] rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 ${
       student.gender === "male"
-        ? "bg-[#dadada] text-black "
+        ? "bg-[#dadada] text-black"
         : "bg-[#dadada] text-black"
     }`}
     whileHover={{ scale: 1.05 }}
@@ -350,11 +379,11 @@ const StudentCard = ({ student }) => (
         className="w-full h-full object-cover object-center"
       />
     </div>
-    <div className="p-4 text-left">
-      <h3 className="text-2xl font-medium mb-2">{student.name}</h3>
-      <p className="text-sm mb-1 truncate">{student.department}</p>
-      <p className="text-sm mb-2 truncate">{student.degree}</p>
-      <div className="flex justify-center gap-4">
+    <div className="p-4">
+      <h3 className="text-lg sm:text-xl font-medium mb-2">{student.name}</h3>
+      <p className="text-xs sm:text-sm mb-1 truncate">{student.department}</p>
+      <p className="text-xs sm:text-sm mb-2 truncate">{student.degree}</p>
+      <div className="flex justify-center gap-2 sm:gap-4">
         {student.socialMedia.linkedin && (
           <a
             href={student.socialMedia.linkedin}
@@ -363,7 +392,7 @@ const StudentCard = ({ student }) => (
             rel="noopener noreferrer"
             aria-label={`LinkedIn profile of ${student.name}`}
           >
-            <FaLinkedin size={24} />
+            <FaLinkedin size={20} />
           </a>
         )}
         {student.socialMedia.github && (
@@ -374,7 +403,7 @@ const StudentCard = ({ student }) => (
             rel="noopener noreferrer"
             aria-label={`GitHub profile of ${student.name}`}
           >
-            <FaGithub size={24} />
+            <FaGithub size={20} />
           </a>
         )}
         {student.socialMedia.email && (
@@ -385,7 +414,7 @@ const StudentCard = ({ student }) => (
             rel="noopener noreferrer"
             aria-label={`Email ${student.name}`}
           >
-            <FaGoogle size={24} />
+            <FaGoogle size={20} />
           </a>
         )}
         {student.socialMedia.outlook && (
@@ -396,7 +425,7 @@ const StudentCard = ({ student }) => (
             rel="noopener noreferrer"
             aria-label={`Outlook profile of ${student.name}`}
           >
-            <FaMicrosoft size={24} />
+            <FaMicrosoft size={20} />
           </a>
         )}
       </div>
@@ -406,8 +435,8 @@ const StudentCard = ({ student }) => (
 
 const Ksr_Team = () => {
   return (
-    <div className="px-8 py-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+    <div className="p-4 sm:p-6 md:p-8 lg:p-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6 md:gap-8 lg:gap-10">
         {sortedStudents.map((student, index) => (
           <StudentCard key={index} student={student} />
         ))}

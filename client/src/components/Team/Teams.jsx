@@ -10,21 +10,54 @@ import iBOY from "../../assets/img/iboy.png";
 import iGIRl from "../../assets/img/igirl.png";
 
 // With BG Image
-import Raghu from "../../assets/profiles/BG/AI_02.jpg";
-import Akash from "../../assets/profiles/BG/AI_03.jpg";
-import Abi from "../../assets/profiles/BG/AI_04.jpg";
-import Hari from "../../assets/profiles/BG/AI_06.jpg";
-import Pavi from "../../assets/profiles/BG/AI_08.jpg";
+// import Dhanush from "../../assets/profiles/BG/EM_01.jpg";
+// import Karthick from "../../assets/img/iboy.png";
 
-import Logesh from "../../assets/profiles/BG/BCA_01.jpg";
-import Monish from "../../assets/profiles/BG/BCA_02.jpg";
-import Sharmitha from "../../assets/profiles/BG/BCA_03.jpg";
-import Poomalar from "../../assets/profiles/BG/BCA_04.jpg";
+// import Raghu from "../../assets/profiles/BG/AI_02.jpg";
+// import Akash from "../../assets/profiles/BG/AI_03.jpg";
+// import Abi from "../../assets/profiles/BG/AI_04.jpg";
+// import Hari from "../../assets/profiles/BG/AI_06.jpg";
+// import Kabhi from "../../assets/profiles/BG/AI_07.jpg";
+// import Pavi from "../../assets/profiles/BG/AI_08.jpg";
+// import Kaviya from "../../assets/profiles/BG/AI_09.jpg";
 
-import Rakshu from "../../assets/profiles/BG/IoT_01.jpg";
-import Bhooshitha from "../../assets/profiles/BG/IoT_02.jpg";
-import Dhanalakshmi from "../../assets/profiles/BG/IoT_03.jpg";
-import Nikitha from "../../assets/profiles/BG/IoT_04.jpg";
+// import Logesh from "../../assets/profiles/BG/BCA_01.jpg";
+// import Monish from "../../assets/profiles/BG/BCA_02.jpg";
+// import Sharmitha from "../../assets/profiles/BG/BCA_03.jpg";
+// import Poomalar from "../../assets/profiles/BG/BCA_04.jpg";
+
+// import Rakshu from "../../assets/profiles/BG/IoT_01.jpg";
+// import Bhooshitha from "../../assets/profiles/BG/IoT_02.jpg";
+// import Dhanalakshmi from "../../assets/profiles/BG/IoT_03.jpg";
+// import Nikitha from "../../assets/profiles/BG/IoT_04.jpg";
+
+// import Arshath from "../../assets/profiles/BG/CS_01.jpg";
+// import Nithyanandhan from "../../assets/profiles/BG/CS_02.jpg";
+
+// Without BG Image
+import Dhanush from "../../assets/profiles/Non_BG/EM_01.png";
+import Karthick from "../../assets/img/iboy.png";
+
+import Raghu from "../../assets/profiles/Non_BG/AI_02.png";
+import Akash from "../../assets/profiles/Non_BG/AI_03.png";
+import Abi from "../../assets/profiles/Non_BG/AI_04.png";
+import Hari from "../../assets/profiles/Non_BG/AI_06.png";
+import Kabhi from "../../assets/profiles/Non_BG/AI_07.png";
+import Pavi from "../../assets/profiles/Non_BG/AI_08.png";
+import Kaviya from "../../assets/profiles/Non_BG/AI_09.png";
+
+import Logesh from "../../assets/profiles/Non_BG/BCA_01.png";
+import Monish from "../../assets/profiles/Non_BG/BCA_02.png";
+import Sharmitha from "../../assets/profiles/Non_BG/BCA_03.png";
+import Poomalar from "../../assets/profiles/Non_BG/BCA_04.png";
+
+import Rakshu from "../../assets/profiles/Non_BG/IoT_01.png";
+import Bhooshitha from "../../assets/profiles/Non_BG/IoT_02.png";
+import Dhanalakshmi from "../../assets/profiles/Non_BG/IoT_03.png";
+import Nikitha from "../../assets/profiles/Non_BG/IoT_04.png";
+
+import Arshath from "../../assets/profiles/Non_BG/CS_01.png";
+import Nithyanandhan from "../../assets/profiles/Non_BG/CS_02.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -35,15 +68,15 @@ const teams = [
       {
         name: "Dhanush ",
         role: "AI & ML Developer",
-        image: iBOY,
+        image: Dhanush,
         description: "Innovating AI solutions for a smarter world.",
         socialMedia: { linkedin: "#", github: "#" },
         contact: "itdhanush68@gmail.com"
       },
       {
-        name: "Karthi ",
+        name: "Karthick ",
         role: "AI & ML Developer",
-        image: iBOY,
+        image: Karthick,
         description:
           "Crafting intelligent systems with a passion for technology.",
         socialMedia: { linkedin: "#", github: "#" },
@@ -61,8 +94,7 @@ const teams = [
         image: Akash,
         description: "A team lead is a coach, not just a boss.",
         socialMedia: {
-          linkedin:
-            "https://www.linkedin.com/in/akash-deep-7624b9298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          linkedin: "https://www.linkedin.com/in/akash-deep-7624b9298"
         },
         contact: "AkashdeepInsights@outlook.com"
       },
@@ -74,8 +106,7 @@ const teams = [
         // description: "Empower your team, and success will follow.",
         description: "AI doesn't just mimic intelligence; it enhances it.",
         socialMedia: {
-          linkedin:
-            "https://www.linkedin.com/in/raghu-a-a12275238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          linkedin: "https://www.linkedin.com/in/raghu-a-a12275238"
         },
         contact: "raghuarunkumar30@gmail.com"
       },
@@ -83,9 +114,13 @@ const teams = [
         name: "Jaiganesh ",
         role: "Full-Stack Developer",
         image: iBOY,
-        description:
-          "Where creativity meets code, crafting stunning web interfaces.",
-        socialMedia: { linkedin: "#", github: "#" },
+        description: "Creativity Meets Code: Stunning Web Interfaces",
+        // description:
+        //   "Where creativity meets code, crafting stunning web interfaces.",
+        socialMedia: {
+          linkedin: "https://www.linkedin.com/in/jaiganesh-d-0184a6325/",
+          github: "#"
+        },
         contact: "jaiganeshd27@gmail.com"
       },
       {
@@ -94,19 +129,17 @@ const teams = [
         image: Logesh,
         description: "Exploring creativity through technology.",
         socialMedia: {
-          linkedin:
-            "https://www.linkedin.com/in/loges-waran-k-1152682aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          linkedin: "https://www.linkedin.com/in/loges-waran-k-1152682aa"
         },
         contact: "LogeswaranKuppusamy@outlook.com"
       },
       {
         name: "Arshath ",
         role: "AI & ML Developer",
-        image: iBOY,
+        image: Arshath,
         description: "AI makes the impossible possible.",
         socialMedia: {
-          linkedin:
-            "https://www.linkedin.com/in/arshath-s-a923b2290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          linkedin: "https://www.linkedin.com/in/arshath-s-a923b2290"
         },
         contact: "arshathsheikabdullah@gmail.com"
       },
@@ -116,19 +149,17 @@ const teams = [
         image: Pavi,
         description: "AI is not science fiction; it's science fact.",
         socialMedia: {
-          linkedin:
-            "https://www.linkedin.com/in/pavithra-kathirvel-a60248302?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          linkedin: "https://www.linkedin.com/in/pavithra-kathirvel-a60248302"
         },
         contact: "pavithrakathirvel@outlook.com"
       },
       {
         name: "Kabhini ",
         role: "AI & ML Developer",
-        image: iGIRl,
+        image: Kabhi,
         description: "Making data work smarter with innovative solutions.",
         socialMedia: {
-          linkedin:
-            "https://www.linkedin.com/in/kabhini-arumugam-2097b6302?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          linkedin: "https://www.linkedin.com/in/kabhini-arumugam-2097b6302"
         },
         contact: "kabhiniinfotech@gmail.com"
       },
@@ -138,8 +169,7 @@ const teams = [
         image: Rakshu,
         description: "Smart devices, smarter decisions.",
         socialMedia: {
-          linkedin:
-            "https://www.linkedin.com/in/rakshu-offcial-034653312?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          linkedin: "https://www.linkedin.com/in/rakshu-offcial-034653312"
         },
         contact: "rakshuoffical@gamil.com"
       },
@@ -149,8 +179,7 @@ const teams = [
         image: Bhooshitha,
         description: "Smart solutions for a smarter world.",
         socialMedia: {
-          linkedin:
-            "https://www.linkedin.com/in/bhooshitha-keseven-b33556324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          linkedin: "https://www.linkedin.com/in/bhooshitha-keseven-b33556324"
         },
         contact: "bhooshithakeseven@gamil.com"
       }
@@ -165,8 +194,7 @@ const teams = [
         image: Abi,
         description: "In leadership, your team's success is your success.",
         socialMedia: {
-          linkedin:
-            "https://www.linkedin.com/in/abinesh-sp-8a54502ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          linkedin: "https://www.linkedin.com/in/abinesh-sp-8a54502ab"
         },
         contact: "abineshprakash@outlook.com"
       },
@@ -176,8 +204,7 @@ const teams = [
         image: Monish,
         description: "Turning ideas into apps, one line of code at a time.",
         socialMedia: {
-          linkedin:
-            "https://www.linkedin.com/in/monish-s16?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          linkedin: "https://www.linkedin.com/in/monish-s16"
         },
         contact: "monishsadhasivam@outlook.com"
       },
@@ -187,8 +214,7 @@ const teams = [
         image: Hari,
         description: "With AI, the future is now.",
         socialMedia: {
-          linkedin:
-            "https://www.linkedin.com/in/hari-hari-034500298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          linkedin: "https://www.linkedin.com/in/hari-hari-034500298"
         },
         contact: "hariharan.tirupur@outlook.com"
       },
@@ -198,19 +224,17 @@ const teams = [
         image: iBOY,
         description: "Machine learning: learning from the future.",
         socialMedia: {
-          linkedin:
-            "https://www.linkedin.com/in/ranjith-n-0621b9319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          linkedin: "https://www.linkedin.com/in/ranjith-n-0621b9319"
         },
         contact: "ranjithnandhagopal@outlook.com"
       },
       {
         name: "Nithyanandhan  ",
         role: "Web Developer",
-        image: iBOY,
+        image: Nithyanandhan,
         description: "The web is a playground for innovation.",
         socialMedia: {
-          linkedin:
-            "https://www.linkedin.com/in/nithyanandhan-muthu-58281131a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          linkedin: "https://www.linkedin.com/in/nithyanandhan-muthu-58281131a"
         },
         contact: "nithyanandhanmuthu@gamil.com"
       },
@@ -220,8 +244,7 @@ const teams = [
         image: Sharmitha,
         description: "Innovating AI solutions for a smarter world.",
         socialMedia: {
-          linkedin:
-            "https://www.linkedin.com/in/sharmitha-m-17055a324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          linkedin: "https://www.linkedin.com/in/sharmitha-m-17055a324"
         },
         contact: "sharmithamurugan@outlook.com"
       },
@@ -231,8 +254,7 @@ const teams = [
         image: Poomalar,
         description: "Innovating AI solutions for a smarter world.",
         socialMedia: {
-          linkedin:
-            "https://www.linkedin.com/in/poomalar-t-966b52323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          linkedin: "https://www.linkedin.com/in/poomalar-t-966b52323"
         },
         contact: "poomalart@outlook.com"
       },
@@ -242,8 +264,7 @@ const teams = [
         image: Dhanalakshmi,
         description: "Smart systems for a connected future.",
         socialMedia: {
-          linkedin:
-            "https://www.linkedin.com/in/dhana-kumar-13971a31a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          linkedin: "https://www.linkedin.com/in/dhana-kumar-13971a31a"
         },
         contact: "dhanalakshmikumer@gmail.com"
       },
@@ -260,11 +281,10 @@ const teams = [
       {
         name: "Kaviya ",
         role: "AI & ML Developer",
-        image: iGIRl,
+        image: Kaviya,
         description: "Innovation starts with AI.",
         socialMedia: {
-          linkedin:
-            "https://www.linkedin.com/in/kaviya-s-621b88302?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          linkedin: "https://www.linkedin.com/in/kaviya-s-621b88302"
         },
         contact: "kaviyasaravanan777@gmail.com"
       }
@@ -361,10 +381,10 @@ const EAM_Team = () => {
             className="relative"
             ref={(el) => (teamRefs.current[index] = el)}
           >
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-secondary mb-12 text-center">
+            <h2 className="text-2xl text-black uppercase md:text-3xl lg:text-4xl font-secondary mb-12 text-center">
               {team.teamName}
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 justify-center">
               {team.members.map((member, idx) => (
                 <motion.div
                   key={idx}
@@ -387,6 +407,9 @@ const EAM_Team = () => {
                     src={member.image}
                     alt={member.name}
                     className="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-2xl object-cover shadow-black shadow-2xl"
+                    style={{
+                      filter: "drop-shadow(0 0 0.20rem #4f4f4f)"
+                    }}
                   />
                   <div className="mt-8">
                     <h3 className="text-xl md:text-2xl font-medium">
@@ -423,7 +446,10 @@ const EAM_Team = () => {
             <img
               src={selectedMember.image}
               alt={selectedMember.name}
-              className="w-full h-96 md:h-96 lg:h-96 z-10 object-cover rounded-t-lg"
+              className="w-full h-96 md:h-96 lg:h-96 z-10 object-cover rounded-3xl shadow-[#4f4f4f] shadow-xl"
+              style={{
+                filter: "drop-shadow(0 0 0.90rem #4f4f4f)"
+              }}
             />
             <div className="p-4 md:p-6 lg:p-8">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black">

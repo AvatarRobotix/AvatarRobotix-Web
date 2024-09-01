@@ -5,8 +5,8 @@ import { Link } from "react-scroll";
 
 import "../assets/css/projects.css";
 
-import projectimg from "../assets/img/indoor.webp";
-import projectimg1 from "../assets/img/medical.jpg";
+import projectimg from "../assets/img/agri_01.jpg";
+import projectimg1 from "../assets/img/medical.png";
 
 const Projects = () => {
   const { ref: secondRef, inView: secondInView } = useInView({
@@ -84,16 +84,7 @@ const Projects = () => {
           className="w-full h-auto max-w-5xl rounded-lg shadow-lg mb-6 md:mb-0 md:mr-8"
         />
         <div className="text-center md:text-left" ref={secondRef}>
-          <motion.h1
-            initial={{ opacity: 0, y: 50 }}
-            animate={
-              secondInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }
-            }
-            transition={{ duration: 1, delay: 0.4 }}
-            className="text-2xl font-semibold  mb-4"
-          >
-            Agricultural Robots
-          </motion.h1>
+          <h1 className="text-2xl font-semibold  mb-4">Agricultural Robots</h1>
           <p className="text-lg ">
             Our agricultural robots are designed to optimize farming practices,
             increase efficiency, and reduce labor costs. These robots are

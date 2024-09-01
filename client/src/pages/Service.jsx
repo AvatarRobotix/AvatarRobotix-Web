@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "../assets/css/services.css";
 
 import service from "../assets/img/agri.jpg";
-import service_0 from "../assets/img/agri_02.png";
+import service_0 from "../assets/img/agri_01.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -124,6 +124,7 @@ const timelineItems = [
 // ];
 
 // Data for Container Titles
+
 const containerTitles = [
   "Development and Cultivation of Enhanced Seaweeds",
   "Biogas Production Systems",
@@ -205,8 +206,8 @@ const uniqueCards = [
 
 const Service = () => {
   useEffect(() => {
-    // GSAP animation for the timeline line
-    const timelineLine = gsap.timeline({
+    // GSAP timeline for animating the line and cards
+    const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".timeline-container",
         start: "top top",
@@ -218,25 +219,24 @@ const Service = () => {
 
     const timelineItems = gsap.utils.toArray(".timeline-item");
 
-    // Loop through each timeline item to animate the line and items
+    // Animate the timeline line
+    tl.fromTo(
+      ".timeline-line",
+      { height: "0%" },
+      { height: "100%", duration: 1.5, ease: "power4.out" }
+    );
+
+    // Sequentially animate each timeline item
     timelineItems.forEach((item, index) => {
-      const isReversed = index % 2 === 0;
-
-      // Animate the connecting line segment
-      timelineLine.to(".timeline-line", {
-        height: `${((index + 1) / timelineItems.length) * 100}%`,
-        duration: 1.5,
-        ease: "power4.out"
-      });
-
-      // Animate the timeline item
-      gsap.fromTo(
+      tl.fromTo(
         item,
-        { opacity: 0, scale: 0.8, x: isReversed ? -100 : 100 },
+        { opacity: 0, scale: 0.8, x: index % 2 === 0 ? -100 : 100 },
         {
           opacity: 1,
           scale: 1,
           x: 0,
+          duration: 1.5,
+          ease: "power4.out",
           scrollTrigger: {
             trigger: item,
             start: "top 80%",
@@ -244,10 +244,9 @@ const Service = () => {
             toggleActions: "play none none none",
             scrub: 1,
             markers: false
-          },
-          duration: 1.5,
-          ease: "power4.out"
-        }
+          }
+        },
+        index * 1.8 // Delay each card by 1.8 seconds from the previous one
       );
     });
   }, []);
@@ -297,9 +296,10 @@ const Service = () => {
           delay: index * 0.2,
           scrollTrigger: {
             trigger: element,
-            start: "top 80%",
-            end: "bottom 60%",
-            toggleActions: "play none none reverse"
+            start: "top 90%", // Start animation when the top of the element is 90% from the top of the viewport
+            end: "bottom 80%", // End animation when the bottom of the element is 80% from the top of the viewport
+            toggleActions: "play none none reverse",
+            markers: false // Set to true if you want to see the start and end markers for debugging
           }
         }
       );
@@ -309,33 +309,40 @@ const Service = () => {
   return (
     <>
       {/* Header Section */}
-      <section className="header">
-        <div className="header-container">
-          <div className="header-content">
-            <h1>Welcome to Avatar Robotix</h1>
-            <p>
-              Revolutionizing the Future with Cutting-Edge Robotics and
-              Automation
-            </p>
-          </div>
-          <div className="header-overlay"></div>
-          <video autoPlay muted loop className="header-video">
+      <section className="relative overflow-hidden w-full h-screen bg-black">
+        <div className="absolute inset-0 overflow-hidden">
+          <video
+            autoPlay
+            muted
+            loop
+            className="absolute inset-0 object-cover w-full h-full"
+          >
             <source src="124333-730771399_large (1).mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
+          <div className="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6 md:px-8 lg:px-12">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-light text-white mb-4 leading-tight">
+            Welcome to Avatar Robotix
+          </h1>
+          <p className="text-base md:text-lg lg:text-xl font-light text-white">
+            Revolutionizing the Future with Cutting-Edge Robotics and Automation
+          </p>
         </div>
       </section>
 
       {/* Video Background Section */}
-      <section className="video-section text-center">
-        <div className="" style={{ backgroundColor: "white", color: "black" }}>
-          <h2 style={{ marginTop: "7%" }}>Innovating the Future</h2>
-          <p>
+      <section className="video-section flex items-center justify-center h-auto text-center bg-white text-black">
+        <div className="p-8">
+          <h2 className="text-3xl text-center mb-4">Innovating the Future</h2>
+          <p className="text-lg">
             Join us in revolutionizing industries with our cutting-edge
             technology solutions.
           </p>
         </div>
       </section>
+
       <img src={service} alt="Service" className="image-part" />
 
       {/* Services Section */}
@@ -362,9 +369,9 @@ const Service = () => {
       </section>
 
       {/* Call to Action Section */}
-      <section className="contact-section bg-blue-200 text-white text-center py-16">
+      <section className="contact-section text-white text-center py-16">
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-6xl text-black mb-6">Get in Touch</h2>
+          <h2 className="text-4xl text-black mb-6">Get in Touch</h2>
           <p className="text-xl mb-8">
             Interested in learning more about how Avatar Robotix can help your
             business? Contact us today!
@@ -379,128 +386,163 @@ const Service = () => {
       </section>
 
       <section>
-        {/* Robotics Grid Section */}
-        <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
-          {[
-            {
-              title: "Surgical Robots",
-              image: service_0,
-              description:
-                "Highly precise robotic systems used in minimally invasive surgeries. These systems offer enhanced dexterity, stability, and precision, often leading to shorter recovery times and reduced complications."
-            },
-            {
-              title: "Robotic-Assisted Rehabilitation",
-              image: service,
-              description:
-                "Robots assist in physical therapy and rehabilitation, helping patients recover mobility and strength after injuries or surgeries. These systems are tailored to individual needs, ensuring effective recovery."
-            },
-            {
-              title: "Diagnostic Robots",
-              image: service_0,
-              description:
-                "Assist in imaging and diagnostics by performing high-precision scans or operating diagnostic equipment. These robots help analyze data and handle samples with accuracy."
-            },
-            {
-              title: "Robotic Prosthetics and Orthotics",
-              image: service,
-              description:
-                "Advanced robotic prosthetics and orthotics improve the functionality and comfort of artificial limbs and supportive devices. They mimic natural movement with sophisticated control systems."
-            },
-            {
-              title: "Remote Surgery and Telemedicine",
-              image: service_0,
-              description:
-                "Robotics enable surgeons to perform procedures remotely, often in conjunction with telemedicine technologies. This benefits underserved or remote areas by providing access to high-quality medical care."
-            },
-            {
-              title: "Automated Laboratory Robots",
-              image: service,
-              description:
-                "In medical research and diagnostics, robots automate repetitive tasks in laboratories. This increases efficiency and accuracy in sample processing and data collection, contributing to faster research outcomes."
-            }
-          ].map((item, index) => (
-            <div
-              className={`flex flex-col items-center p-4 rounded-lg text-black shadow-lg bg-[#ccc2ff] h-full transition-transform transform hover:scale-105 hover:bg-[#9b87ff] hover:text-white`}
-              key={index}
-            >
-              <img
-                src={item.image}
-                alt={item.title}
-                className="w-full h-48 object-cover rounded-lg mb-4"
-              />
-              <div className="flex flex-col justify-between h-full text-center">
-                <h2 className="text-2xl font-medium text-black mb-2 ">
-                  {item.title}
-                </h2>
-                <p className="text-gray-700 mb-8 text-base">
-                  {item.description}
-                </p>
+        {/* Robots Cards */}
+        <section className="px-4 py-8 sm:px-6 sm:py-12 ">
+          <div className="text-center mb-12">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl text-black">
+              Our Robotics Solutions
+            </h1>
+            <p className="mt-4 text-sm sm:text-base md:text-base ">
+              Discover our range of cutting-edge robotic systems designed to
+              revolutionize the medical field with precision, efficiency, and
+              innovation.
+            </p>
+          </div>
+
+          <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {[
+              {
+                title: "Surgical Robots",
+                image: service_0,
+                description:
+                  "Highly precise robotic systems used in minimally invasive surgeries. These systems offer enhanced dexterity, stability, and precision, often leading to shorter recovery times and reduced complications.",
+                bgColor: "bg-[#090518]" // First color
+              },
+              {
+                title: "Robotic-Assisted Rehabilitation",
+                image: service,
+                description:
+                  "Robots assist in physical therapy and rehabilitation, helping patients recover mobility and strength after injuries or surgeries. These systems are tailored to individual needs, ensuring effective recovery.",
+                bgColor: "bg-[#090518]" // Second color
+              },
+              {
+                title: "Diagnostic Robots",
+                image: service_0,
+                description:
+                  "Assist in imaging and diagnostics by performing high-precision scans or operating diagnostic equipment. These robots help analyze data and handle samples with accuracy.",
+                bgColor: "bg-[#090518]" // First color
+              },
+              {
+                title: "Robotic Prosthetics and Orthotics",
+                image: service,
+                description:
+                  "Advanced robotic prosthetics and orthotics improve the functionality and comfort of artificial limbs and supportive devices. They mimic natural movement with sophisticated control systems.",
+                bgColor: "bg-[#090518]" // Second color
+              },
+              {
+                title: "Remote Surgery and Telemedicine",
+                image: service_0,
+                description:
+                  "Robotics enable surgeons to perform procedures remotely, often in conjunction with telemedicine technologies. This benefits underserved or remote areas by providing access to high-quality medical care.",
+                bgColor: "bg-[#090518]" // First color
+              },
+              {
+                title: "Automated Laboratory Robots",
+                image: service,
+                description:
+                  "In medical research and diagnostics, robots automate repetitive tasks in laboratories. This increases efficiency and accuracy in sample processing and data collection, contributing to faster research outcomes.",
+                bgColor: "bg-[#090518]" // Second color
+              },
+              {
+                title: "AI-Powered Surgical Assistance",
+                image: service,
+                description:
+                  "AI-driven robots assist surgeons by providing real-time analytics and decision-making support during complex procedures. This integration enhances surgical outcomes and reduces the risk of errors.",
+                bgColor: "bg-[#090518]" // First color
+              },
+              {
+                title: "Robotic Pharmacy Automation",
+                image: service_0,
+                description:
+                  "Robots in pharmacies automate the dispensing of medications, ensuring accuracy and efficiency in medication management. This system reduces human error and speeds up the process of filling prescriptions.",
+                bgColor: "bg-[#090518]" // Second color
+              }
+            ].map((item, index) => (
+              <div
+                className={`flex flex-col items-center p-2 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl ${item.bgColor}`}
+                key={index}
+              >
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-40 md:h-40 lg:h-40 object-cover rounded-lg mb-4"
+                />
+                <div className="flex flex-col h-full text-center p-4">
+                  <h2 className="text-lg sm:text-xl md:text-2xl lg:text-2xl text-white mb-2">
+                    {item.title}
+                  </h2>
+                  <p className="text-sm sm:text-base md:text-base lg:text-base mt-4 text-gray-400 mb-4">
+                    {item.description}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </section>
         </section>
 
         {/* Timeline Section */}
-        <section className="relative py-12">
-          <h1 className="text-center text-6xl font-extralight mt-10">
+        <section className="relative py-6 lg:py-12">
+          <h1 className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extralight mt-4 sm:mt-6 lg:mt-8 xl:mt-10">
             TimeLine Services OR Projects
           </h1>
-          <div className="timeline-container relative mx-auto px-6 lg:px-12 max-w-6xl">
-            <div className="timeline-line absolute w-1 bg-[#a68eff] h-0 left-1/2 transform -translate-x-1/2"></div>
-            {timelineItems.map((item, index) => (
-              <div
-                className={`timeline-item flex flex-col md:flex-row items-center my-40 relative ${
-                  index % 2 === 0 ? "md:flex-row-reverse" : ""
-                }`}
-                key={item.title}
-              >
-                <motion.div
-                  className="timeline-card rounded-lg shadow-lg flex-1 mx-4"
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{
-                    duration: 1.2,
-                    ease: "easeOut",
-                    delay: index * 0.3
-                  }}
+          <div className="timeline-container relative mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 max-w-6xl overflow-x-auto">
+            <div className="timeline-line absolute w-1 bg-[#090518] h-full left-1/2 transform -translate-x-1/2"></div>
+            <div className="flex flex-col space-y-12 lg:space-y-24">
+              {timelineItems.map((item, index) => (
+                <div
+                  className={`timeline-item flex flex-col sm:flex-row items-center ${
+                    index % 2 === 0 ? "sm:flex-row-reverse" : ""
+                  }`}
+                  key={item.title}
                 >
-                  <img
-                    src={item.imageSrc}
-                    alt={item.imageAlt}
-                    className="w-full h-96 object-cover rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
-                  />
-                </motion.div>
+                  <motion.div
+                    className="timeline-card rounded-lg shadow-lg flex-1 mx-2 sm:mx-4 md:mx-6 lg:mx-8"
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{
+                      duration: 1.2,
+                      ease: "easeOut",
+                      delay: index * 0.3
+                    }}
+                  >
+                    <img
+                      src={item.imageSrc}
+                      alt={item.imageAlt}
+                      className="w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80 object-cover rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
+                    />
+                  </motion.div>
 
-                <motion.div
-                  className="timeline-card bg-[#090518] p-8 rounded-lg shadow-lg flex-1 mx-4"
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{
-                    duration: 1.2,
-                    ease: "easeOut",
-                    delay: index * 0.5
-                  }}
-                >
-                  <h2 className="text-4xl text-white mb-4 font-extralight">
-                    {item.title}
-                  </h2>
-                  <p className="text-white font-2xl font-light">
-                    {item.description}
-                  </p>
-                </motion.div>
-              </div>
-            ))}
+                  <motion.div
+                    className="timeline-card bg-[#090518] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 rounded-lg shadow-lg flex-1 mx-2 sm:mx-4 md:mx-6 lg:mx-8"
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{
+                      duration: 1.2,
+                      ease: "easeOut",
+                      delay: index * 0.5
+                    }}
+                  >
+                    <h2 className="text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl text-white mb-2 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6 font-extralight">
+                      {item.title}
+                    </h2>
+                    <p className="text-sm sm:text-base md:text-base lg:text-base xl:text-base text-white font-light">
+                      {item.description}
+                    </p>
+                  </motion.div>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
         {/* Unique Cards Section */}
         <section
-          className="relative unique-cards-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-8"
+          className="relative unique-cards-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-4 sm:p-6 md:p-8 lg:p-10"
           ref={uniqueCardsRef}
         >
           {uniqueCards.map((card, index) => (
             <motion.div
-              className="gsap-unique-card flex flex-col items-center p-6 rounded-lg shadow-lg h-80 bg-[#94ff93] text-center transition-transform duration-300"
+              className="gsap-unique-card flex flex-col items-center p-4 sm:p-6 md:p-8 rounded-lg shadow-lg bg-[#94ff93] text-center transition-transform duration-300"
               key={index}
               initial={{ opacity: 0, rotateX: 15 }}
               animate={{ opacity: 1, rotateX: 0 }}
@@ -519,11 +561,14 @@ const Service = () => {
               }}
               whileTap={{ rotate: -5 }}
             >
-              <h2 className="text-4xl font-normal mb-4 text-black">
+              <h2 className="text-2xl sm:text-2xl md:text-2xl lg:text-2xl font-semibold mb-4 text-black">
                 {card.title}
               </h2>
               {card.descriptions.map((desc, i) => (
-                <p className="text-base mb-2 text-black" key={i}>
+                <p
+                  className="text-base sm:text-sm md:text-base lg:text-sm mb-2 text-black"
+                  key={i}
+                >
                   {desc}
                 </p>
               ))}
@@ -532,29 +577,29 @@ const Service = () => {
         </section>
 
         {/* Container Titles Section */}
-        <section className="container-titles-container py-16 ">
+        <section className="container-titles-container py-8 sm:py-12 md:py-16 lg:py-20">
           <div className="container mx-auto px-4">
             <motion.h2
-              className="text-5xl font-extralight text-center mb-16 text-black"
+              className="text-3xl sm:text-4xl md:text-4xl lg:text-4xl font-extralight text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20 text-black"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              Explore More !
+              Explore More!
             </motion.h2>
             <div
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12"
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12 lg:gap-16"
               ref={containerTitlesRef}
             >
               {containerTitles.map((title, index) => (
                 <motion.div
                   key={index}
-                  className={`gsap-container-title shadow-lg rounded-lg p-8 text-center ${
+                  className={`gsap-container-title shadow-lg rounded-lg p-6 sm:p-8 md:p-10 lg:p-4 text-center ${
                     index % 2 === 0 ? "bg-[#c5ffc4]" : "bg-[#c2cdff]"
                   }`}
                   whileHover={{ scale: 1.05, rotate: -2 }}
                 >
-                  <h3 className="text-2xl font-normal text-gray-700 mb-4">
+                  <h3 className="text-lg sm:text-xl md:text-xl lg:text-xl font-normal text-black mb-4">
                     {title}
                   </h3>
                 </motion.div>
