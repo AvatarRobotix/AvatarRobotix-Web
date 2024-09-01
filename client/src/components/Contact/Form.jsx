@@ -116,7 +116,7 @@ const ContactForm = () => {
       </form>
       {showNotification && (
         <motion.div
-          className="fixed bottom-5 right-5 bg-[#b6ffb4] text-black p-4 rounded-lg shadow-lg"
+          className="z-50 fixed bottom-5 right-5 bg-[#b6ffb4] text-black p-4 rounded-lg shadow-lg"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}

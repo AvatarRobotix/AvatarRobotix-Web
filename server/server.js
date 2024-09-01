@@ -36,24 +36,71 @@ app.post("/api/contact", (req, res) => {
     <html>
       <head>
         <style>
-          body { font-family: 'Helvetica Neue', Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; }
-          .container { width: 100%; max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
-          .header { background-color: #007BFF; color: #ffffff; padding: 20px; text-align: center; }
-          .content { padding: 30px 20px; color: #333333; line-height: 1.6; }
-          .content p { margin: 10px 0; }
-          .footer { padding: 15px 20px; background-color: #f4f4f4; text-align: center; color: #777777; font-size: 12px; }
-          .button { display: inline-block; padding: 10px 15px; margin-top: 20px; background-color: #007BFF; color: #ffffff; text-decoration: none; border-radius: 5px; }
+          body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333333;
+          }
+          .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #e0e0e0;
+          }
+          .header {
+            background-color: #c5ffc4; /* Light Green */
+            color: #000000;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+          }
+          .content {
+            padding: 30px 20px;
+            line-height: 1.6;
+          }
+          .content p {
+            margin: 15px 0;
+          }
+          .highlight {
+            padding: 5px 10px;
+            border-radius: 4px;
+          }
+          .footer {
+            padding: 15px 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+            color: #000000;
+            font-size: 12px;
+            border-top: 1px solid #e0e0e0;
+          }
+          .button {
+            display: inline-block;
+            padding: 12px 20px;
+            margin-top: 20px;
+            background-color: #a6a9ff; /* Light Blue */
+            text-decoration: none;
+            color: #ffffff;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+          }
         </style>
       </head>
       <body>
         <div class="container">
           <div class="header">
-            <h1>Contact Form Submission</h1>
+            Contact Form Submission
           </div>
           <div class="content">
-            <p><strong>Name:</strong> ${name}</p>
-            <p><strong>Email:</strong> ${email}</p>
-            <p><strong>Subject:</strong> ${subject}</p>
+            <p><strong>Name:</strong> <span class="highlight">${name}</span></p>
+            <p><strong>Email:</strong> <span class="highlight">${email}</span></p>
+            <p><strong>Subject:</strong> <span class="highlight">${subject}</span></p>
             <p><strong>Message:</strong></p>
             <p>${content}</p>
             <a href="mailto:${email}" class="button">Reply to ${name}</a>
@@ -63,7 +110,8 @@ app.post("/api/contact", (req, res) => {
           </div>
         </div>
       </body>
-    </html>`
+    </html>
+  `
   };
 
   // Email to User
@@ -75,12 +123,56 @@ app.post("/api/contact", (req, res) => {
     <html>
       <head>
         <style>
-          body { font-family: 'Helvetica Neue', Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; }
-          .container { width: 100%; max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
-          .header { background-color: #007BFF; color: #ffffff; padding: 20px; text-align: center; }
-          .content { padding: 30px 20px; color: #333333; line-height: 1.6; }
-          .content p { margin: 10px 0; }
-          .footer { padding: 15px 20px; background-color: #f4f4f4; text-align: center; color: #777777; font-size: 12px; }
+          body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+          }
+          .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+          }
+          .header {
+            background-color: #c5ffc4; /* Light Green */
+            color: #000000;
+            padding: 20px;
+            text-align: center;
+          }
+          .content {
+            padding: 30px 20px;
+            color: #000000;
+            line-height: 1.6;
+          }
+          .content p {
+            margin: 10px 0;
+          }
+          .highlight {
+            padding: 5px 10px;
+            border-radius: 4px;
+            display: inline-block;
+            font-weight: bold;
+          }
+          .employee {
+            background-color: #ffcfa5; /* Light Orange */
+          }
+          .agri {
+            background-color: #c5ffc4; /* Light Green */
+          }
+          .medical {
+            background-color: #a6a9ff; /* Light Blue */
+          }
+          .footer {
+            padding: 15px 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+            color: #000000;
+            font-size: 12px;
+          }
         </style>
       </head>
       <body>
@@ -89,10 +181,10 @@ app.post("/api/contact", (req, res) => {
             <h1>Thank You for Contacting Us!</h1>
           </div>
           <div class="content">
-            <p>Dear ${name},</p>
-            <p>Thank you for reaching out to us. We have received your message regarding "<strong>${subject}</strong>" and will get back to you shortly.</p>
+            <p>Dear <span class="highlight employee">${name}</span>,</p>
+            <p>Thank you for reaching out to us. We have received your message regarding "<strong class="highlight agri">${subject}</strong>" and will get back to you shortly.</p>
             <p><strong>Your Message:</strong></p>
-            <p>${content}</p>
+            <p class="highlight ">${content}</p>
           </div>
           <div class="footer">
             <p>&copy; 2024 Avatar Robotix. All rights reserved.</p>

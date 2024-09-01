@@ -124,7 +124,7 @@ const Contact = () => {
         >
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3910.4227656281987!2d77.40130197452541!3d11.44938064642169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba93d698880c345%3A0xe08dd16d1dc3a42f!2sGobi%20Arts%20%26%20Science%20College%2C%20Gobi!5e0!3m2!1sen!2sin!4v1724305418469!5m2!1sen!2sin"
-            className="absolute inset-0 w-full h-full border-0"
+            className="absolute inset-0 w-full h-full border-0 rounded-2xl"
             allowFullScreen
             loading="lazy"
           ></iframe>

@@ -1,15 +1,60 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import "../assets/css/services.css";
+// import "../assets/css/services.css";
 
 import service from "../assets/img/agri.jpg";
 import service_0 from "../assets/img/agri_01.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
+// Data for Services
+const services = [
+  {
+    type: "Medical Robotics",
+    imageSrc: service,
+    description:
+      "Advanced robotics solutions for medical applications, improving precision and efficiency.",
+    details:
+      "Medical robotics is revolutionizing healthcare with technologies that enhance surgical precision, reduce recovery times, and improve patient outcomes. Our solutions include robotic surgery systems, automated diagnostics, and patient care robotics, designed to meet the growing demands of modern healthcare."
+  },
+  {
+    type: "Agriculture Robotics",
+    imageSrc: service,
+    description:
+      "Innovative robotics for agriculture, enhancing productivity and sustainability.",
+    details:
+      "Agriculture robotics is transforming farming with automated systems that increase crop yields, reduce labor costs, and promote sustainable practices. From autonomous tractors to precision planting and harvesting robots, our technology helps farmers produce more with less."
+  },
+  {
+    type: "Industrial Automation",
+    imageSrc: service,
+    description:
+      "Robotic solutions for industrial automation, increasing efficiency and safety.",
+    details:
+      "Industrial automation with robotics enhances manufacturing processes by automating repetitive tasks, improving precision, and ensuring safety. Our solutions include robotic arms, conveyor systems, and smart manufacturing technologies that help industries operate more efficiently."
+  },
+  {
+    type: "Drone Technology",
+    imageSrc: service,
+    description:
+      "Cutting-edge drone technology for various applications, from surveying to delivery.",
+    details:
+      "Drone technology is advancing rapidly, providing new opportunities for industries such as agriculture, logistics, and security. Our drones offer superior aerial capabilities for tasks like surveying, monitoring, and even delivery, making operations faster and more efficient."
+  },
+  {
+    type: "Artificial Intelligence",
+    imageSrc: service,
+    description:
+      "AI-driven solutions that power the future of technology and automation.",
+    details:
+      "Artificial intelligence is at the forefront of technological innovation, driving advancements in automation, data analysis, and machine learning. Our AI solutions enable smarter decision-making, predictive analytics, and intelligent systems that adapt to the ever-changing technological landscape."
+  }
+];
+
+// Data for Timeline Items
 const timelineItems = [
   {
     title: "Automated Dispensing Systems",
@@ -41,90 +86,7 @@ const timelineItems = [
   }
 ];
 
-// Data for Service Items
-// const serviceItems = [
-//   {
-//     id: "autonomous-vehicles",
-//     imgSrc: "Untitled design (3).png",
-//     imgAlt: "Robotic Tractors",
-//     title: "Autonomous Farming Vehicles",
-//     descriptions: [
-//       "Develop autonomous tractors for tasks such as plowing, planting, and harvesting, reducing manual labor and increasing efficiency.",
-//       "Create robotic systems that can plant seeds and harvest crops with precision."
-//     ]
-//   },
-//   {
-//     id: "precision-agriculture",
-//     imgSrc: "Untitled design (6).png",
-//     imgAlt: "Drones for Monitoring",
-//     title: "Precision Agriculture",
-//     descriptions: [
-//       "Use drones for monitoring crop health and mapping fields for precision farming.",
-//       "Implement AI algorithms to analyze data from drones and sensors for better crop management."
-//     ]
-//   },
-//   {
-//     id: "soil-management",
-//     imgSrc: "Untitled design (7).png",
-//     imgAlt: "Soil Sensors",
-//     title: "Soil Management",
-//     descriptions: [
-//       "Deploy robotic soil sensors to collect data on soil conditions and optimize farming practices.",
-//       "Use robotic systems for soil tillage and preparation."
-//     ]
-//   },
-//   {
-//     id: "irrigation-management",
-//     imgSrc: "Untitled design (8).png",
-//     imgAlt: "Smart Irrigation",
-//     title: "Irrigation Management",
-//     descriptions: [
-//       "Develop automated irrigation systems to optimize water usage and reduce waste.",
-//       "Implement robots that adjust irrigation schedules based on real-time data."
-//     ]
-//   },
-//   {
-//     id: "pest-control",
-//     imgSrc: "Untitled design (9).png",
-//     imgAlt: "Pest and Weed Control",
-//     title: "Pest and Weed Control",
-//     descriptions: [
-//       "Design robots for autonomous weed removal and targeted pest management.",
-//       "Reduce the need for herbicides and pesticides with precision robotics."
-//     ]
-//   },
-//   {
-//     id: "harvesting",
-//     imgSrc: "Untitled design (10).png",
-//     imgAlt: "Robotic Harvesting",
-//     title: "Harvesting and Post-Harvest Handling",
-//     descriptions: [
-//       "Create advanced harvesters for delicate crop handling.",
-//       "Implement automated sorting and packaging systems."
-//     ]
-//   },
-//   {
-//     id: "farm-data-management",
-//     imgSrc: "Untitled design (12).png",
-//     imgAlt: "Farm Data Management",
-//     title: "Farm Data Management",
-//     descriptions: [
-//       "Provide AI-enhanced farm management software and real-time monitoring tools."
-//     ]
-//   },
-//   {
-//     id: "research-development",
-//     imgSrc: "Untitled design (15).png",
-//     imgAlt: "Research and Development",
-//     title: "Research and Development",
-//     descriptions: [
-//       "Engage in continuous R&D to create custom robotic solutions and collaborate with agricultural experts."
-//     ]
-//   }
-// ];
-
 // Data for Container Titles
-
 const containerTitles = [
   "Development and Cultivation of Enhanced Seaweeds",
   "Biogas Production Systems",
@@ -205,6 +167,25 @@ const uniqueCards = [
 ];
 
 const Service = () => {
+  const [selectedService, setSelectedService] = useState(null);
+
+  const handleLearnMore = (service) => {
+    setSelectedService(service);
+    document.body.style.overflow = "hidden"; // Disable background scroll
+  };
+
+  const closePopup = () => {
+    setSelectedService(null);
+    document.body.style.overflow = "auto"; // Re-enable background scroll
+  };
+
+  // Clean up if the component unmounts while the popup is open
+  useEffect(() => {
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
+
   useEffect(() => {
     // GSAP timeline for animating the line and cards
     const tl = gsap.timeline({
@@ -333,40 +314,80 @@ const Service = () => {
       </section>
 
       {/* Video Background Section */}
-      <section className="video-section flex items-center justify-center h-auto text-center bg-white text-black">
-        <div className="p-8">
-          <h2 className="text-3xl text-center mb-4">Innovating the Future</h2>
-          <p className="text-lg">
+      <section className="flex items-center justify-center h-auto text-center bg-white text-black py-12">
+        <div className="max-w-3xl mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+            Innovating the Future
+          </h2>
+          <p className="text-lg md:text-xl">
             Join us in revolutionizing industries with our cutting-edge
             technology solutions.
           </p>
         </div>
       </section>
 
-      <img src={service} alt="Service" className="image-part" />
+      <img
+        src={service}
+        alt="Service"
+        className="w-[80%] h-[50%] mx-auto object-cover"
+      />
 
-      {/* Services Section */}
-      <section className="services-section">
-        <h2>Our Services</h2>
-        <div className="services-grid">
-          {/* Repeat Service Card */}
-          {[
-            "Medical Robotics",
-            "Agriculture Robotics",
-            "Industrial Automation",
-            "Drone Technology",
-            "Artificial Intelligence"
-          ].map((serviceType) => (
-            <div className="service-card" key={serviceType}>
-              <img src={service} alt={serviceType} />
-              <h3>{serviceType}</h3>
-              <p>
-                {`Advanced robotics solutions for ${serviceType.toLowerCase()}, improving precision and efficiency.`}
-              </p>
+      <div>
+        {/* Services Section */}
+        <section className="py-12 bg-gray-100">
+          <div className="max-w-7xl mx-auto px-4">
+            <h2 className="text-3xl md:text-6xl font-light text-center mb-8">
+              Our Services
+            </h2>
+            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              {services.map((service) => (
+                <div
+                  key={service.type}
+                  className="bg-white p-2 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2"
+                >
+                  <img
+                    src={service.imageSrc}
+                    alt={service.type}
+                    className="w-full h-60 object-cover mb-4 rounded-xl"
+                  />
+                  <div className="px-4 py-2">
+                    <h3 className="text-2xl font-semibold mb-2 text-gray-800">
+                      {service.type}
+                    </h3>
+                    <p className="text-gray-600">{service.description}</p>
+                    <div className="flex justify-center">
+                      <button
+                        onClick={() => handleLearnMore(service)}
+                        className="mt-4 bg-[#c8c8c8] text-black py-2 px-8 rounded-md hover:bg-[#ffcfa5] transition-colors duration-300"
+                      >
+                        Learn More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-      </section>
+          </div>
+        </section>
+
+        {/* Popup Modal */}
+        {selectedService && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <div className="bg-white p-8 rounded-lg max-w-lg mx-auto relative">
+              <button
+                onClick={closePopup}
+                className="absolute top-3 right-3 text-black hover:bg-red-500 hover:text-white p-2 rounded-full transition-colors duration-300"
+              >
+                X
+              </button>
+              <h3 className="text-3xl font-semibold mb-4 text-gray-800">
+                {selectedService.type}
+              </h3>
+              <p className="text-gray-600 mb-4">{selectedService.details}</p>
+            </div>
+          </div>
+        )}
+      </div>
 
       {/* Call to Action Section */}
       <section className="contact-section text-white text-center py-16">
@@ -482,7 +503,7 @@ const Service = () => {
 
         {/* Timeline Section */}
         <section className="relative py-6 lg:py-12">
-          <h1 className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extralight mt-4 sm:mt-6 lg:mt-8 xl:mt-10">
+          <h1 className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extralight mt-4 mb-6 sm:mt-6 lg:mt-8 xl:mt-10">
             TimeLine Services OR Projects
           </h1>
           <div className="timeline-container relative mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 max-w-6xl overflow-x-auto">
