@@ -119,7 +119,7 @@ const teams = [
         //   "Where creativity meets code, crafting stunning web interfaces.",
         socialMedia: {
           linkedin: "https://www.linkedin.com/in/jaiganesh-d-0184a6325/",
-          github: "#"
+          github: "https://github.com/iBOYJAI"
         },
         contact: "jaiganeshd27@gmail.com"
       },

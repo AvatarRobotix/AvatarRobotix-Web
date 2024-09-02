@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { FaLinkedin, FaTwitter, FaFacebook } from "react-icons/fa";
+import { FaLinkedin, FaEnvelope, FaGlobe } from "react-icons/fa"; // Import the icons
 
 // With BG Image
 import CEO from "../../assets/profiles/BG/CEO.jpg";
@@ -55,32 +55,41 @@ const Ceo_Co = () => {
             />
             {/* Name and Title */}
             <h1 className="text-xl md:text-2xl font-bold text-white">
-              CEO Name
+              K S KAARVENTHAN
             </h1>
-            <h2 className="text-base md:text-lg text-white mt-2">CEO</h2>
-            {/* Description */}
+            <h2 className="text-base md:text-lg text-white mt-2">
+              CEO & FOUNDER
+            </h2>
+            {/* Contact Information */}
             <p className="text-white mt-4">
-              More details about the CEO go here. This can include a brief bio
-              or description of their role in the company. Add information about
-              their experience, achievements, and vision for the company.
+              +91 6379211833 | +91 9025967273
+              <br />
+              <br />
+              <a
+                href="mailto:avatarrobotix@outlook.com"
+                className="flex items-center justify-center gap-2"
+              >
+                <FaEnvelope /> avatarrobotix@outlook.com
+              </a>
+              <a
+                href="https://www.avatarrobotix.com"
+                className="flex items-center justify-center gap-2"
+              >
+                <FaGlobe /> www.avatarrobotix.com
+              </a>
+              <br />
+              3/438, Iswarya Garden, P.Vellalapalayam, Gobichettipalayam -
+              638476.
             </p>
             {/* Social Media Icons */}
             <div className="flex justify-center gap-4 mt-6 text-white">
-              <a href="https://linkedin.com" aria-label="LinkedIn">
+              <a
+                href="https://www.linkedin.com/in/avatar-robotix-az963"
+                aria-label="LinkedIn"
+              >
                 <FaLinkedin className="text-lg md:text-xl hover:text-blue-500 transition-colors" />
               </a>
-              <a href="https://twitter.com" aria-label="Twitter">
-                <FaTwitter className="text-lg md:text-xl hover:text-blue-400 transition-colors" />
-              </a>
-              <a href="https://facebook.com" aria-label="Facebook">
-                <FaFacebook className="text-lg md:text-xl hover:text-blue-600 transition-colors" />
-              </a>
             </div>
-            {/* Additional Details */}
-            {/* <div className="mt-6 text-white text-sm md:text-base">
-              <p>Email: ceo@example.com</p>
-              <p>LinkedIn: linkedin.com/in/fakename</p>
-            </div> */}
           </motion.div>
         </div>
       </motion.div>
@@ -104,7 +113,7 @@ const Ceo_Co = () => {
             {/* Profile Image */}
             <motion.img
               src={CoFo}
-              alt="COO"
+              alt="Co-Founder"
               className="w-28 h-28 md:w-32 md:h-32 rounded-2xl mb-4 object-cover shadow-black shadow-2xl"
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: inView2 ? 1 : 0.8, opacity: inView2 ? 1 : 0 }}
@@ -112,33 +121,42 @@ const Ceo_Co = () => {
             />
             {/* Name and Title */}
             <h1 className="text-xl md:text-2xl font-bold text-black">
-              Another Name
+              G HARINI
             </h1>
-            <h2 className="text-base md:text-lg text-black mt-2">COO</h2>
-            {/* Description */}
+            <h2 className="text-base md:text-lg text-black mt-2">
+              CO-FOUNDER & MANAGING DIRECTOR
+            </h2>
+            {/* Contact Information */}
             <p className="text-black mt-4">
-              More details about the COO go here. This can include a brief bio
-              or description of their role in the company. Add details about
-              their professional background, contributions, and goals for the
-              future.
+              +91 6379211833 | +91 9025967273
+              <br />
+              <br />
+              <a
+                href="mailto:avatarrobotix@outlook.com"
+                className="flex items-center justify-center gap-2"
+              >
+                <FaEnvelope /> avatarrobotix@outlook.com
+              </a>
+              <a
+                href="https://www.avatarrobotix.com"
+                className="flex items-center justify-center gap-2"
+              >
+                <FaGlobe /> www.avatarrobotix.com
+              </a>
+              <br />
+              3/438, Iswarya Garden, P.Vellalapalayam, Gobichettipalayam -
+              638476.
             </p>
             {/* Social Media Icons */}
             <div className="flex justify-center gap-4 mt-6 text-black">
-              <a href="https://linkedin.com" aria-label="LinkedIn">
+              <a
+                href="https://www.linkedin.com/in/avatar-robotix-az963"
+                aria-label="LinkedIn"
+                className=""
+              >
                 <FaLinkedin className="text-lg md:text-xl hover:text-blue-500 transition-colors" />
               </a>
-              <a href="https://twitter.com" aria-label="Twitter">
-                <FaTwitter className="text-lg md:text-xl hover:text-blue-400 transition-colors" />
-              </a>
-              <a href="https://facebook.com" aria-label="Facebook">
-                <FaFacebook className="text-lg md:text-xl hover:text-blue-600 transition-colors" />
-              </a>
             </div>
-            {/* Additional Details */}
-            {/* <div className="mt-6 text-black text-sm md:text-base">
-              <p>Email: coo@example.com</p>
-              <p>LinkedIn: linkedin.com/in/anothername</p>
-            </div> */}
           </motion.div>
         </div>
         {/* Right Image Background */}

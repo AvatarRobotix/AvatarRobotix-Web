@@ -12,6 +12,7 @@ import Abi from "../../assets/profiles/BG/AI_04.jpg";
 import Hari from "../../assets/profiles/BG/AI_06.jpg";
 import Kabhi from "../../assets/profiles/BG/AI_07.jpg";
 import Pavi from "../../assets/profiles/BG/AI_08.jpg";
+import Kaviya from "../../assets/profiles/BG/AI_09.jpg";
 
 import Logesh from "../../assets/profiles/BG/BCA_01.jpg";
 import Monish from "../../assets/profiles/BG/BCA_02.jpg";
@@ -23,8 +24,8 @@ import Bhooshitha from "../../assets/profiles/BG/IoT_02.jpg";
 import Dhanalakshmi from "../../assets/profiles/BG/IoT_03.jpg";
 import Nikitha from "../../assets/profiles/BG/IoT_04.jpg";
 
-import Arshath from "../../assets/profiles/BG/CS_01.png";
-import Nithyanandhan from "../../assets/profiles/BG/CS_02.png";
+import Arshath from "../../assets/profiles/BG/CS_01.jpg";
+import Nithyanandhan from "../../assets/profiles/BG/CS_02.jpg";
 
 // Without BG Image
 // import Raghu from "../../assets/profiles/Non_BG/AI_02.png";
@@ -73,7 +74,7 @@ const students = [
     image: iBOY,
     socialMedia: {
       linkedin: "https://www.linkedin.com/in/jaiganesh-d-0184a6325/",
-      github: "https://github.com/jaiganeshd",
+      github: "https://github.com/iBOYJAI",
       email: "mailto:jaiganeshd27@gmail.com",
       outlook: "mailto:jaiganesh.dev@outlook.com"
     },
