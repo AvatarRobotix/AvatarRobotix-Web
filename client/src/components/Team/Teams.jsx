@@ -10,54 +10,54 @@ import iBOY from "../../assets/img/iboy.png";
 import iGIRl from "../../assets/img/igirl.png";
 
 // With BG Image
-// import Dhanush from "../../assets/profiles/BG/EM_01.jpg";
-// import Karthick from "../../assets/img/iboy.png";
-
-// import Raghu from "../../assets/profiles/BG/AI_02.jpg";
-// import Akash from "../../assets/profiles/BG/AI_03.jpg";
-// import Abi from "../../assets/profiles/BG/AI_04.jpg";
-// import Hari from "../../assets/profiles/BG/AI_06.jpg";
-// import Kabhi from "../../assets/profiles/BG/AI_07.jpg";
-// import Pavi from "../../assets/profiles/BG/AI_08.jpg";
-// import Kaviya from "../../assets/profiles/BG/AI_09.jpg";
-
-// import Logesh from "../../assets/profiles/BG/BCA_01.jpg";
-// import Monish from "../../assets/profiles/BG/BCA_02.jpg";
-// import Sharmitha from "../../assets/profiles/BG/BCA_03.jpg";
-// import Poomalar from "../../assets/profiles/BG/BCA_04.jpg";
-
-// import Rakshu from "../../assets/profiles/BG/IoT_01.jpg";
-// import Bhooshitha from "../../assets/profiles/BG/IoT_02.jpg";
-// import Dhanalakshmi from "../../assets/profiles/BG/IoT_03.jpg";
-// import Nikitha from "../../assets/profiles/BG/IoT_04.jpg";
-
-// import Arshath from "../../assets/profiles/BG/CS_01.jpg";
-// import Nithyanandhan from "../../assets/profiles/BG/CS_02.jpg";
-
-// Without BG Image
-import Dhanush from "../../assets/profiles/Non_BG/EM_01.png";
+import Dhanush from "../../assets/profiles/BG/EM_01.jpg";
 import Karthick from "../../assets/img/iboy.png";
 
-import Raghu from "../../assets/profiles/Non_BG/AI_02.png";
-import Akash from "../../assets/profiles/Non_BG/AI_03.png";
-import Abi from "../../assets/profiles/Non_BG/AI_04.png";
-import Hari from "../../assets/profiles/Non_BG/AI_06.png";
-import Kabhi from "../../assets/profiles/Non_BG/AI_07.png";
-import Pavi from "../../assets/profiles/Non_BG/AI_08.png";
-import Kaviya from "../../assets/profiles/Non_BG/AI_09.png";
+import Raghu from "../../assets/profiles/BG/AI_02.jpg";
+import Akash from "../../assets/profiles/BG/AI_03.jpg";
+import Abi from "../../assets/profiles/BG/AI_04.jpg";
+import Hari from "../../assets/profiles/BG/AI_06.jpg";
+import Kabhi from "../../assets/profiles/BG/AI_07.jpg";
+import Pavi from "../../assets/profiles/BG/AI_08.jpg";
+import Kaviya from "../../assets/profiles/BG/AI_09.jpg";
 
-import Logesh from "../../assets/profiles/Non_BG/BCA_01.png";
-import Monish from "../../assets/profiles/Non_BG/BCA_02.png";
-import Sharmitha from "../../assets/profiles/Non_BG/BCA_03.png";
-import Poomalar from "../../assets/profiles/Non_BG/BCA_04.png";
+import Logesh from "../../assets/profiles/BG/BCA_01.jpg";
+import Monish from "../../assets/profiles/BG/BCA_02.jpg";
+import Sharmitha from "../../assets/profiles/BG/BCA_03.jpg";
+import Poomalar from "../../assets/profiles/BG/BCA_04.jpg";
 
-import Rakshu from "../../assets/profiles/Non_BG/IoT_01.png";
-import Bhooshitha from "../../assets/profiles/Non_BG/IoT_02.png";
-import Dhanalakshmi from "../../assets/profiles/Non_BG/IoT_03.png";
-import Nikitha from "../../assets/profiles/Non_BG/IoT_04.png";
+import Rakshu from "../../assets/profiles/BG/IoT_01.jpg";
+import Bhooshitha from "../../assets/profiles/BG/IoT_02.jpg";
+import Dhanalakshmi from "../../assets/profiles/BG/IoT_03.jpg";
+import Nikitha from "../../assets/profiles/BG/IoT_04.jpg";
 
-import Arshath from "../../assets/profiles/Non_BG/CS_01.png";
-import Nithyanandhan from "../../assets/profiles/Non_BG/CS_02.png";
+import Arshath from "../../assets/profiles/BG/CS_01.jpg";
+import Nithyanandhan from "../../assets/profiles/BG/CS_02.jpg";
+
+// Without BG Image
+// import Dhanush from "../../assets/profiles/Non_BG/EM_01.png";
+// import Karthick from "../../assets/img/iboy.png";
+
+// import Raghu from "../../assets/profiles/Non_BG/AI_02.png";
+// import Akash from "../../assets/profiles/Non_BG/AI_03.png";
+// import Abi from "../../assets/profiles/Non_BG/AI_04.png";
+// import Hari from "../../assets/profiles/Non_BG/AI_06.png";
+// import Kabhi from "../../assets/profiles/Non_BG/AI_07.png";
+// import Pavi from "../../assets/profiles/Non_BG/AI_08.png";
+// import Kaviya from "../../assets/profiles/Non_BG/AI_09.png";
+
+// import Logesh from "../../assets/profiles/Non_BG/BCA_01.png";
+// import Monish from "../../assets/profiles/Non_BG/BCA_02.png";
+// import Sharmitha from "../../assets/profiles/Non_BG/BCA_03.png";
+// import Poomalar from "../../assets/profiles/Non_BG/BCA_04.png";
+
+// import Rakshu from "../../assets/profiles/Non_BG/IoT_01.png";
+// import Bhooshitha from "../../assets/profiles/Non_BG/IoT_02.png";
+// import Dhanalakshmi from "../../assets/profiles/Non_BG/IoT_03.png";
+// import Nikitha from "../../assets/profiles/Non_BG/IoT_04.png";
+
+// import Arshath from "../../assets/profiles/Non_BG/CS_01.png";
+// import Nithyanandhan from "../../assets/profiles/Non_BG/CS_02.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
