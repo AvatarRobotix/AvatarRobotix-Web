@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -8,6 +8,8 @@ import Agri from "../assets/img/agri_01.jpg";
 import agri_0 from "../assets/video/agri_0.mp4";
 import medical_0 from "../assets/video/medical_3.mp4";
 import videobg from "../assets/video/edit1.mp4";
+
+import Mobile from "../assets/video/Mobile.mp4";
 
 import {
   FaLightbulb,
@@ -24,18 +26,49 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
   const sectionRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Function to check screen size
+  const checkScreenSize = () => {
+    if (window.innerWidth <= 767) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
+
+  // Set up event listener on component mount and clean up on unmount
+  useEffect(() => {
+    checkScreenSize(); // Initial check on mount
+    window.addEventListener("resize", checkScreenSize); // Check on resize
+
+    return () => {
+      window.removeEventListener("resize", checkScreenSize);
+    };
+  }, []);
 
   return (
     <div className="overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative container mx-auto text-center h-screen flex items-end justify-center overflow-hidden">
-        <video
-          src={videobg}
-          autoPlay
-          muted
-          loop
-          className="absolute inset-0 w-full h-full object-cover"
-        ></video>
+        {/* Conditionally render videos based on screen size */}
+        {isMobile ? (
+          <video
+            src={Mobile}
+            autoPlay
+            muted
+            loop
+            className="absolute inset-0 w-full h-full object-cover"
+          ></video>
+        ) : (
+          <video
+            src={videobg}
+            autoPlay
+            muted
+            loop
+            className="absolute inset-0 w-full h-full object-cover"
+          ></video>
+        )}
         <div className="relative z-10 mb-20 md:mb-32 pb-8 rounded-lg max-w-4xl mx-auto">
           <div className="flex flex-col md:flex-row md:justify-center space-y-4 md:space-y-0 md:space-x-8">
             <h1 className="text-lg sm:text-2xl md:text-xl font-medium uppercase">

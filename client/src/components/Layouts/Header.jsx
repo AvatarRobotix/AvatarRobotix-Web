@@ -1,8 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 
-import LOGO from "../../assets/img/Logo_1.png";
+import LOGO from "../../assets/video/LOGO.mp4"; // Update this path if necessary
 
 const Header = () => {
   const [dropdownOpen, setDropdownOpen] = useState(null);
@@ -58,10 +57,13 @@ const Header = () => {
             to="/"
             className="flex items-center space-x-3 transition-colors duration-300"
           >
-            <img
-              src={LOGO} // Replace with the actual path to your logo image
+            <video
+              src={LOGO}
               alt="Avatar Robotix Logo"
-              className="h-10 w-auto" // Adjust the size of the logo as needed
+              className="h-10 w-auto object-cover" // Adjust dimensions and styling as needed
+              autoPlay
+              loop
+              muted
             />
             <span className="text-lg uppercase font-semibold text-black">
               Avatar Robotix

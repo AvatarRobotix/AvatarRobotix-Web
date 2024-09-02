@@ -6,9 +6,11 @@ import iBOY from "../../assets/img/iboy.png";
 import iGIRL from "../../assets/img/igirl.png";
 
 // With BG Image
+import Jai from "../../assets/profiles/BG/AI_01-0.jpg";
 import Raghu from "../../assets/profiles/BG/AI_02.jpg";
 import Akash from "../../assets/profiles/BG/AI_03.jpg";
 import Abi from "../../assets/profiles/BG/AI_04.jpg";
+import Ranji from "../../assets/profiles/BG/AI_05.jpg";
 import Hari from "../../assets/profiles/BG/AI_06.jpg";
 import Kabhi from "../../assets/profiles/BG/AI_07.jpg";
 import Pavi from "../../assets/profiles/BG/AI_08.jpg";
@@ -28,9 +30,11 @@ import Arshath from "../../assets/profiles/BG/CS_01.jpg";
 import Nithyanandhan from "../../assets/profiles/BG/CS_02.jpg";
 
 // Without BG Image
+// import Jai from "../../assets/profiles/Non_BG/AI_01-0.png";
 // import Raghu from "../../assets/profiles/Non_BG/AI_02.png";
 // import Akash from "../../assets/profiles/Non_BG/AI_03.png";
 // import Abi from "../../assets/profiles/Non_BG/AI_04.png";
+// import Ranji from "../../assets/profiles/Non_BG/AI_05.png";
 // import Hari from "../../assets/profiles/Non_BG/AI_06.png";
 // import Kabhi from "../../assets/profiles/Non_BG/AI_07.png";
 // import Pavi from "../../assets/profiles/Non_BG/AI_08.png";
@@ -71,7 +75,7 @@ const students = [
     degree: "B.Sc. CS AI & DS",
     email: "mailto:jaiganesh.d@example.com",
     year: "Year 1",
-    image: iBOY,
+    image: Jai,
     socialMedia: {
       linkedin: "https://www.linkedin.com/in/jaiganesh-d-0184a6325/",
       github: "https://github.com/iBOYJAI",
@@ -161,7 +165,7 @@ const students = [
     degree: "B.Sc. CS AI & DS",
     email: "mailto:ranjith@example.com",
     year: "Year 1",
-    image: iBOY,
+    image: Ranji,
     socialMedia: {
       linkedin: "https://www.linkedin.com/in/ranjith-n-0621b9319",
       // github: "https://github.com/ranjith",
