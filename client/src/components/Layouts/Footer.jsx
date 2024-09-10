@@ -1,4 +1,5 @@
 import React from "react";
+import { FaEnvelope, FaGlobe, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -14,10 +15,30 @@ const Footer = () => {
             <br />
             <a
               className="inline-block mt-2 text-[#7e7e7e] bg-gray-900 bg-opacity-20 hover:bg-opacity-30 transition rounded-full py-1 px-3 text-xs md:text-sm lg:text-md"
-              href="mailto:example@gmail.com"
+              href="mailto:avatarrobotix@outlook.com"
             >
               Email Us
             </a>
+            <p className="text-white mt-4">
+              +91 6379211833 | +91 9025967273
+              <br />
+              <br />
+              <a
+                href="mailto:avatarrobotix@outlook.com"
+                className="flex items-center justify-center gap-2"
+              >
+                <FaEnvelope /> avatarrobotix@outlook.com
+              </a>
+              <a
+                href="https://www.avatarrobotix.com"
+                className="flex items-center justify-center gap-2"
+              >
+                <FaGlobe /> www.avatarrobotix.com
+              </a>
+              <br />
+              3/438, Iswarya Garden, P.Vellalapalayam, Gobichettipalayam -
+              638476.
+            </p>
           </address>
         </div>
 
@@ -100,6 +121,15 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+      </div>
+
+      <div className="flex justify-center gap-4 mt-6 text-white">
+        <a
+          href="https://www.linkedin.com/in/avatar-robotix-az963"
+          aria-label="LinkedIn"
+        >
+          <FaLinkedin className="text-lg md:text-xl hover:text-blue-500 transition-colors" />
+        </a>
       </div>
 
       <div className="mt-6 text-center text-gray-500 text-xs md:text-sm lg:text-base">

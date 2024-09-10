@@ -2,346 +2,109 @@ import React from "react";
 import { FaLinkedin, FaGithub, FaGoogle, FaMicrosoft } from "react-icons/fa";
 import { motion } from "framer-motion";
 
-import iBOY from "../../assets/img/iboy.png";
-import iGIRL from "../../assets/img/igirl.png";
-
 // With BG Image
-import Jai from "../../assets/profiles/BG/AI_01-0.jpg";
-import Raghu from "../../assets/profiles/BG/AI_02.jpg";
-import Akash from "../../assets/profiles/BG/AI_03.jpg";
-import Abi from "../../assets/profiles/BG/AI_04.jpg";
-import Ranji from "../../assets/profiles/BG/AI_05.jpg";
-import Hari from "../../assets/profiles/BG/AI_06.jpg";
-import Kabhi from "../../assets/profiles/BG/AI_07.jpg";
-import Pavi from "../../assets/profiles/BG/AI_08.jpg";
-import Kaviya from "../../assets/profiles/BG/AI_09.jpg";
+import DURGA from "../../assets/profiles/BG/KSR/AI_01.png";
+import GOKILA from "../../assets/profiles/BG/KSR/AI_02.png";
+import SANDHIYA from "../../assets/profiles/BG/KSR/AI_03.png";
+import SHAKTHEE from "../../assets/profiles/BG/KSR/AI_04.png";
 
-import Logesh from "../../assets/profiles/BG/BCA_01.jpg";
-import Monish from "../../assets/profiles/BG/BCA_02.jpg";
-import Sharmitha from "../../assets/profiles/BG/BCA_03.jpg";
-import Poomalar from "../../assets/profiles/BG/BCA_04.jpg";
-
-import Rakshu from "../../assets/profiles/BG/IoT_01.jpg";
-import Bhooshitha from "../../assets/profiles/BG/IoT_02.jpg";
-import Dhanalakshmi from "../../assets/profiles/BG/IoT_03.jpg";
-import Nikitha from "../../assets/profiles/BG/IoT_04.jpg";
-
-import Arshath from "../../assets/profiles/BG/CS_01.jpg";
-import Nithyanandhan from "../../assets/profiles/BG/CS_02.jpg";
+import SRIDHARAN from "../../assets/profiles/BG/KSR/ML_01.png";
+import VARATHARAJAN from "../../assets/profiles/BG/KSR/ML_02.png";
 
 // Without BG Image
-// import Jai from "../../assets/profiles/Non_BG/AI_01-0.png";
-// import Raghu from "../../assets/profiles/Non_BG/AI_02.png";
-// import Akash from "../../assets/profiles/Non_BG/AI_03.png";
-// import Abi from "../../assets/profiles/Non_BG/AI_04.png";
-// import Ranji from "../../assets/profiles/Non_BG/AI_05.png";
-// import Hari from "../../assets/profiles/Non_BG/AI_06.png";
-// import Kabhi from "../../assets/profiles/Non_BG/AI_07.png";
-// import Pavi from "../../assets/profiles/Non_BG/AI_08.png";
-// import Kaviya from "../../assets/profiles/Non_BG/AI_09.png";
+// import DURGA from "../../assets/profiles/Non_BG/KSR/AI_01.png";
+// import GOKILA from "../../assets/profiles/Non_BG/KSR/AI_02.png";
+// import SANDHIYA from "../../assets/profiles/Non_BG/KSR/AI_03.png";
+// import SHAKTHEE from "../../assets/profiles/Non_BG/KSR/AI_04.png";
 
-// import Logesh from "../../assets/profiles/Non_BG/BCA_01.png";
-// import Monish from "../../assets/profiles/Non_BG/BCA_02.png";
-// import Sharmitha from "../../assets/profiles/Non_BG/BCA_03.png";
-// import Poomalar from "../../assets/profiles/Non_BG/BCA_04.png";
-
-// import Rakshu from "../../assets/profiles/Non_BG/IoT_01.png";
-// import Bhooshitha from "../../assets/profiles/Non_BG/IoT_02.png";
-// import Dhanalakshmi from "../../assets/profiles/Non_BG/IoT_03.png";
-// import Nikitha from "../../assets/profiles/Non_BG/IoT_04.png";
-
-// import Arshath from "../../assets/profiles/Non_BG/CS_01.png";
-// import Nithyanandhan from "../../assets/profiles/Non_BG/CS_02.png";
-
+// import SRIDHARAN from "../../assets/profiles/Non_BG/KSR/ML_01.png";
+// import VARATHARAJAN from "../../assets/profiles/Non_BG/KSR/ML_02.png";
 
 const students = [
   {
-    name: "Raghu",
-    department: "Department of Artificial Intelligence",
-    degree: "B.Sc. CS AI & DS",
-    email: "mailto:raghu@example.com",
-    year: "Year 1",
-    image: Raghu,
+    name: "DURGA SARAVANAN",
+    department: "Department of Artificial Intelligence & Data Science",
+    degree: "AI & DS",
+    email: "mailto:durgasaran2004@gmail.com",
+    year: "III/V",
+    image: DURGA,
     socialMedia: {
-      linkedin: "https://www.linkedin.com/in/raghu-a-a12275238",
-      // github: "https://github.com/raghu",
-      email: "mailto:raghuarunkumar30@gmail.com"
-      // outlook: "mailto:https://outlook.com/raghu"
+      linkedin: "https://www.linkedin.com/in/durga-saravanan-13b49a24b",
+      email: "mailto:durgasaran2004@gmail.com"
     },
-    gender: "male"
+    gender: "female",
+    phone: "9080191925",
+    college: "K S RANGASAMY COLLEGE OF TECHNOLOGY, TIRUCHENGODE"
   },
   {
-    name: "Jaiganesh",
-    department: "Department of Artificial Intelligence",
-    degree: "B.Sc. CS AI & DS",
-    email: "mailto:jaiganesh.d@example.com",
-    year: "Year 1",
-    image: Jai,
+    name: "GOKILA R",
+    department: "Department of Artificial Intelligence & Data Science",
+    degree: "AI & DS",
+    email: "mailto:gokilag812@gmail.com",
+    year: "III/V",
+    image: GOKILA,
     socialMedia: {
-      linkedin: "https://www.linkedin.com/in/jaiganesh-d-0184a6325/",
-      github: "https://github.com/iBOYJAI",
-      email: "mailto:jaiganeshd27@gmail.com",
-      outlook: "mailto:jaiganesh.dev@outlook.com"
+      linkedin: "https://www.linkedin.com/in/gokila-r-065a5b270",
+      email: "mailto:gokilag812@gmail.com"
     },
-    gender: "male"
+    phone: "9342558156",
+    college: "K S RANGASAMY COLLEGE OF TECHNOLOGY, TIRUCHENGODE"
   },
   {
-    name: "Akash Deep",
-    department: "Department of Artificial Intelligence",
-    degree: "B.Sc. CS AI & DS",
-    email: "mailto:akash.deep@example.com",
-    year: "Year 1",
-    image: Akash,
+    name: "SANDHIYA PERIYASAMY",
+    department: "Department of Artificial Intelligence & Data Science",
+    degree: "AI & DS",
+    email: "mailto:sandhiyaperiyasamy05@gmail.com",
+    year: "III/V",
+    image: SANDHIYA,
     socialMedia: {
-      linkedin: "https://www.linkedin.com/in/akash-deep-7624b9298",
-      // github: "https://github.com/akashdeep",
-      // email: "mailto:mailto:akash.deep@example.com",
-      outlook: "mailto:AkashdeepInsights@outlook.com"
+      linkedin: "https://www.linkedin.com/in/sandhiya-p-65666624b/",
+      email: "mailto:sandhiyaperiyasamy05@gmail.com"
     },
-    gender: "male"
+    phone: "9600526547",
+    college: "K S RANGASAMY COLLEGE OF TECHNOLOGY, TIRUCHENGODE"
   },
   {
-    name: "Pavithra",
-    department: "Department of Artificial Intelligence",
-    degree: "B.Sc. CS AI & DS",
-    email: "mailto:pavithra@example.com",
-    year: "Year 1",
-    image: Pavi,
+    name: "SHAKTHEE NIVEDHA K",
+    department: "Department of Artificial Intelligence & Data Science",
+    degree: "AI & DS",
+    email: "mailto:shaktheenivedha@gmail.com",
+    year: "III/V",
+    image: SHAKTHEE,
     socialMedia: {
-      linkedin: "https://www.linkedin.com/in/pavithra-kathirvel-a60248302",
-      // github: "https://github.com/pavithra",
-      email: "mailto:mailto:pavithra@example.com",
-      outlook: "mailto:pavithrakathirvel@outlook.com"
+      linkedin: "https://www.linkedin.com/in/shakthee-nivedha-k-48312727b/",
+      email: "mailto:shaktheenivedha@gmail.com"
     },
-    gender: "female"
+    phone: "6382991752",
+    college: "K S RANGASAMY COLLEGE OF TECHNOLOGY, TIRUCHENGODE"
   },
   {
-    name: "Kabhini",
-    department: "Department of Artificial Intelligence",
-    degree: "B.Sc. CS AI & DS",
-    email: "mailto:kabhini@example.com",
-    year: "Year 1",
-    image: Kabhi,
+    name: "SRIDHARAN",
+    department: "Department of ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING",
+    degree: "AI & ML",
+    email: "mailto:sridharanvk123@gmail.com",
+    year: "III/V",
+    image: SRIDHARAN,
     socialMedia: {
-      linkedin: "https://www.linkedin.com/in/kabhini-arumugam-2097b6302",
-      // github: "https://github.com/kabhini",
-      email: "mailto:kabhiniinfotech@gmail.com"
-      // outlook: "mailto:https://outlook.com/kabhini"
+      linkedin: "https://www.linkedin.com/in/sridharan-vk-45b19b27b/",
+      email: "mailto:sridharanvk123@gmail.com"
     },
-    gender: "female"
+    phone: "9361684631",
+    college: "K S RANGASAMY COLLEGE OF TECHNOLOGY, TIRUCHENGODE"
   },
   {
-    name: "Abinesh",
-    department: "Department of Artificial Intelligence",
-    degree: "B.Sc. CS AI & DS",
-    email: "mailto:abinesh@example.com",
-    year: "Year 1",
-    image: Abi,
+    name: "VARATHARAJAN",
+    department: "Department of ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING",
+    degree: "AI & ML",
+    email: "mailto:varatha9500@gmail.com",
+    year: "III/V",
+    image: VARATHARAJAN,
     socialMedia: {
-      linkedin: "https://www.linkedin.com/in/abinesh-sp-8a54502ab",
-      // github: "https://github.com/abinesh",
-      // email: "mailto:mailto:abinesh@example.com",
-      outlook: "mailto:abineshprakash@outlook.com"
+      linkedin: "https://www.linkedin.com/in/varatharajan-k-v-278340292/",
+      email: "mailto:varatha9500@gmail.com"
     },
-    gender: "male"
-  },
-  {
-    name: "Hari Haran",
-    department: "Department of Artificial Intelligence",
-    degree: "B.Sc. CS AI & DS",
-    email: "mailto:hari.haran@example.com",
-    year: "Year 1",
-    image: Hari,
-    socialMedia: {
-      linkedin: "https://www.linkedin.com/in/hari-hari-034500298",
-      // github: "https://github.com/hariharan",
-      // email: "mailto:mailto:hari.haran@example.com",
-      outlook: "mailto:hariharan.tirupur@outlook.com"
-    },
-    gender: "male"
-  },
-  {
-    name: "Ranjith",
-    department: "Department of Artificial Intelligence",
-    degree: "B.Sc. CS AI & DS",
-    email: "mailto:ranjith@example.com",
-    year: "Year 1",
-    image: Ranji,
-    socialMedia: {
-      linkedin: "https://www.linkedin.com/in/ranjith-n-0621b9319",
-      // github: "https://github.com/ranjith",
-      // email: "mailto:mailto:ranjith@example.com",
-      outlook: "mailto:ranjithnandhagopal@outlook.com"
-    },
-    gender: "male"
-  },
-  {
-    name: "Kaviya",
-    department: "Department of Artificial Intelligence",
-    degree: "B.Sc. CS AI & DS",
-    email: "mailto:kaviya@example.com",
-    year: "Year 1",
-    image: Kaviya,
-    socialMedia: {
-      linkedin: "https://www.linkedin.com/in/kaviya-s-621b88302",
-      // github: "https://github.com/kaviya",
-      email: "mailto:kaviyasaravanan777@gmail.com"
-      // outlook: "mailto:https://outlook.com/kaviya"
-    },
-    gender: "female"
-  },
-
-  {
-    name: "Rakshana Devi",
-    department: "Department of Internet of Things",
-    degree: "B.SC IOT",
-    email: "mailto:rakshana.devi@example.com",
-    year: "Year 1",
-    image: Rakshu,
-    socialMedia: {
-      linkedin: "https://www.linkedin.com/in/rakshu-offcial-034653312",
-      // github: "https://github.com/rakshana-devi",
-      email: "mailto:rakshuoffical@gamil.com"
-      // outlook: "mailto:https://outlook.com/rakshana-devi"
-    },
-    gender: "female"
-  },
-  {
-    name: "Dhanalakshmi",
-    department: "Department of Internet of Things",
-    degree: "B.SC IOT",
-    email: "mailto:dhanalakshmi@example.com",
-    year: "Year 1",
-    image: Dhanalakshmi,
-    socialMedia: {
-      linkedin: "https://www.linkedin.com/in/dhana-kumar-13971a31a",
-      // github: "https://github.com/dhanalakshmi",
-      email: "mailto:dhanalakshmikumer@gmail.com"
-      // outlook: "mailto:https://outlook.com/dhanalakshmi"
-    },
-    gender: "female"
-  },
-  {
-    name: "Nikitha Sri",
-    department: "Department of Internet of Things",
-    degree: "B.SC IOT",
-    email: "mailto:nikitha.sri@example.com",
-    year: "Year 1",
-    image: Nikitha,
-    socialMedia: {
-      // linkedin: "https://linkedin.com/in/nikitha-sri",
-      // github: "https://github.com/nikitha-sri",
-      email: "mailto:nikithasriayyasamy@gmail.com"
-      // outlook: "mailto:https://outlook.com/nikitha-sri"
-    },
-    gender: "female"
-  },
-  {
-    name: "Bhooshitha",
-    department: "Department of Internet of Things",
-    degree: "B.SC IOT",
-    email: "mailto:bhooshitha@example.com",
-    year: "Year 1",
-    image: Bhooshitha,
-    socialMedia: {
-      linkedin: "https://www.linkedin.com/in/bhooshitha-keseven-b33556324",
-      // github: "https://github.com/bhooshitha",
-      email: "mailto:bhooshithakeseven@gamil.com"
-      // outlook: "mailto:https://outlook.com/bhooshitha"
-    },
-    gender: "female"
-  },
-
-  {
-    name: "Logesh",
-    department: "Department of Computer Application",
-    degree: "BCA",
-    email: "mailto:logesh@example.com",
-    year: "Year 1",
-    image: Logesh,
-    socialMedia: {
-      linkedin: "https://www.linkedin.com/in/loges-waran-k-1152682aa",
-      // github: "https://github.com/logesh",
-      // email: "mailto:mailto:logesh@example.com",
-      outlook: "mailto:LogeswaranKuppusamy@outlook.com"
-    },
-    gender: "male"
-  },
-  {
-    name: "Monish S",
-    department: "Department of Computer Application",
-    degree: "BCA",
-    email: "mailto:monish.s@example.com",
-    year: "Year 1",
-    image: Monish,
-    socialMedia: {
-      linkedin: "https://www.linkedin.com/in/monish-s16",
-      // github: "https://github.com/monishs",
-      // email: "mailto:mailto:monish.s@example.com",
-      outlook: "mailto:monishsadhasivam@outlook.com"
-    },
-    gender: "male"
-  },
-  {
-    name: "Sharmitha",
-    department: "Department of Computer Application",
-    degree: "BCA",
-    email: "mailto:sharmitha@example.com",
-    year: "Year 1",
-    image: Sharmitha,
-    socialMedia: {
-      linkedin: "https://www.linkedin.com/in/sharmitha-m-17055a324",
-      // github: "https://github.com/sharmitha",
-      // email: "mailto:mailto:sharmitha@example.com",
-      outlook: "mailto:sharmithamurugan@outlook.com"
-    },
-    gender: "female"
-  },
-  {
-    name: "Poomalar",
-    department: "Department of Computer Application",
-    degree: "BCA",
-    email: "mailto:poomalar@example.com",
-    year: "Year 1",
-    image: Poomalar,
-    socialMedia: {
-      linkedin: "https://www.linkedin.com/in/poomalar-t-966b52323",
-      // github: "https://github.com/poomalar",
-      // email: "mailto:mailto:poomalar@example.com",
-      outlook: "mailto:poomalart@outlook.com"
-    },
-    gender: "female"
-  },
-
-  {
-    name: "Arshath",
-    department: "Department of Computer Science",
-    degree: "B.SC CS",
-    email: "mailto:arshath@example.com",
-    year: "Year 1",
-    image: Arshath,
-    socialMedia: {
-      linkedin: "https://www.linkedin.com/in/arshath-s-a923b2290",
-      // github: "https://github.com/arshath",
-      email: "mailto:arshathsheikabdullah@gmail.com"
-      // outlook: "mailto:https://outlook.com/arshath"
-    },
-    gender: "male"
-  },
-  {
-    name: "Nithyanandhan",
-    department: "Department of Computer Science",
-    degree: "B.SC CS",
-    email: "mailto:nithyanandhan@example.com",
-    year: "Year 1",
-    image: Nithyanandhan,
-    socialMedia: {
-      linkedin: "https://www.linkedin.com/in/nithyanandhan-muthu-58281131a",
-      // github: "https://github.com/nithyanandhan",
-      email: "mailto:nithyanandhanmuthu@gamil.com"
-      // outlook: "mailto:https://outlook.com/nithyanandhan"
-    },
-    gender: "male"
+    phone: "9500791281",
+    college: "K S RANGASAMY COLLEGE OF TECHNOLOGY, TIRUCHENGODE"
   }
 ];
 
@@ -361,7 +124,7 @@ const StudentCard = ({ student }) => (
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
   >
-    <div className="relative w-full h-48">
+    <div className="relative w-full h-96">
       <img
         src={student.image}
         alt={`Profile picture of ${student.name}`}

@@ -4,12 +4,12 @@ import { useInView } from "react-intersection-observer";
 import { FaLinkedin, FaEnvelope, FaGlobe } from "react-icons/fa"; // Import the icons
 
 // With BG Image
-import CEO from "../../assets/profiles/BG/CEO.jpg";
-import CoFo from "../../assets/profiles/BG/Co-Fo.jpg";
+import CEO from "../../assets/profiles/BG/Management/CEO.jpg";
+import CoFo from "../../assets/profiles/BG/Management/Co-Fo.jpg";
 
 // Without BG Image
-import CEO_ from "../../assets/profiles/Non_BG/CEO.png";
-import CoFo_ from "../../assets/profiles/Non_BG/Co-Fo.png";
+import CEO_ from "../../assets/profiles/Non_BG/Management/CEO.png";
+import CoFo_ from "../../assets/profiles/Non_BG/Management/Co-Fo.png";
 
 const Ceo_Co = () => {
   // Intersection Observer hooks

@@ -6,57 +6,57 @@ import iBOY from "../../assets/img/iboy.png";
 import iGIRL from "../../assets/img/igirl.png";
 
 // With BG Image
-import Jai from "../../assets/profiles/BG/AI_01-0.jpg";
-import Raghu from "../../assets/profiles/BG/AI_02.jpg";
-import Akash from "../../assets/profiles/BG/AI_03.jpg";
-import Abi from "../../assets/profiles/BG/AI_04.jpg";
-import Ranji from "../../assets/profiles/BG/AI_05.jpg";
-import Hari from "../../assets/profiles/BG/AI_06.jpg";
-import Kabhi from "../../assets/profiles/BG/AI_07.jpg";
-import Pavi from "../../assets/profiles/BG/AI_08.jpg";
-import Kaviya from "../../assets/profiles/BG/AI_09.jpg";
+// import Jai from "../../assets/profiles/BG/GASC/AI_01-1.jpg";
+import Raghu from "../../assets/profiles/BG/GASC/AI_02.jpg";
+import Akash from "../../assets/profiles/BG/GASC/AI_03.jpg";
+import Abi from "../../assets/profiles/BG/GASC/AI_04.jpg";
+import Ranji from "../../assets/profiles/BG/GASC/AI_05.jpg";
+import Hari from "../../assets/profiles/BG/GASC/AI_06.jpg";
+import Kabhi from "../../assets/profiles/BG/GASC/AI_07.jpg";
+import Pavi from "../../assets/profiles/BG/GASC/AI_08.jpg";
+import Kaviya from "../../assets/profiles/BG/GASC/AI_09.jpg";
 
-import Logesh from "../../assets/profiles/BG/BCA_01.jpg";
-import Monish from "../../assets/profiles/BG/BCA_02.jpg";
-import Sharmitha from "../../assets/profiles/BG/BCA_03.jpg";
-import Poomalar from "../../assets/profiles/BG/BCA_04.jpg";
+import Logesh from "../../assets/profiles/BG/GASC/BCA_01.jpg";
+import Monish from "../../assets/profiles/BG/GASC/BCA_02.jpg";
+import Sharmitha from "../../assets/profiles/BG/GASC/BCA_03.jpg";
+import Poomalar from "../../assets/profiles/BG/GASC/BCA_04.jpg";
 
-import Rakshu from "../../assets/profiles/BG/IoT_01.jpg";
-import Bhooshitha from "../../assets/profiles/BG/IoT_02.jpg";
-import Dhanalakshmi from "../../assets/profiles/BG/IoT_03.jpg";
-import Nikitha from "../../assets/profiles/BG/IoT_04.jpg";
+import Rakshu from "../../assets/profiles/BG/GASC/IoT_01.jpg";
+import Bhooshitha from "../../assets/profiles/BG/GASC/IoT_02.jpg";
+import Dhanalakshmi from "../../assets/profiles/BG/GASC/IoT_03.jpg";
+import Nikitha from "../../assets/profiles/BG/GASC/IoT_04.jpg";
 
-import Arshath from "../../assets/profiles/BG/CS_01.jpg";
-import Nithyanandhan from "../../assets/profiles/BG/CS_02.jpg";
+import Arshath from "../../assets/profiles/BG/GASC/CS_01.jpg";
+import Nithyanandhan from "../../assets/profiles/BG/GASC/CS_02.jpg";
 
 // Without BG Image
-// import Jai from "../../assets/profiles/Non_BG/AI_01-0.png";
-// import Raghu from "../../assets/profiles/Non_BG/AI_02.png";
-// import Akash from "../../assets/profiles/Non_BG/AI_03.png";
-// import Abi from "../../assets/profiles/Non_BG/AI_04.png";
-// import Ranji from "../../assets/profiles/Non_BG/AI_05.png";
-// import Hari from "../../assets/profiles/Non_BG/AI_06.png";
-// import Kabhi from "../../assets/profiles/Non_BG/AI_07.png";
-// import Pavi from "../../assets/profiles/Non_BG/AI_08.png";
-// import Kaviya from "../../assets/profiles/Non_BG/AI_09.png";
+import Jai from "../../assets/profiles/Non_BG/GASC/AI_01-1.png";
+// import Raghu from "../../assets/profiles/Non_BG/GASC/AI_02.png";
+// import Akash from "../../assets/profiles/Non_BG/GASC/AI_03.png";
+// import Abi from "../../assets/profiles/Non_BG/GASC/AI_04.png";
+// import Ranji from "../../assets/profiles/Non_BG/GASC/AI_05.png";
+// import Hari from "../../assets/profiles/Non_BG/GASC/AI_06.png";
+// import Kabhi from "../../assets/profiles/Non_BG/GASC/AI_07.png";
+// import Pavi from "../../assets/profiles/Non_BG/GASC/AI_08.png";
+// import Kaviya from "../../assets/profiles/Non_BG/GASC/AI_09.png";
 
-// import Logesh from "../../assets/profiles/Non_BG/BCA_01.png";
-// import Monish from "../../assets/profiles/Non_BG/BCA_02.png";
-// import Sharmitha from "../../assets/profiles/Non_BG/BCA_03.png";
-// import Poomalar from "../../assets/profiles/Non_BG/BCA_04.png";
+// import Logesh from "../../assets/profiles/Non_BG/GASC/BCA_01.png";
+// import Monish from "../../assets/profiles/Non_BG/GASC/BCA_02.png";
+// import Sharmitha from "../../assets/profiles/Non_BG/GASC/BCA_03.png";
+// import Poomalar from "../../assets/profiles/Non_BG/GASC/BCA_04.png";
 
-// import Rakshu from "../../assets/profiles/Non_BG/IoT_01.png";
-// import Bhooshitha from "../../assets/profiles/Non_BG/IoT_02.png";
-// import Dhanalakshmi from "../../assets/profiles/Non_BG/IoT_03.png";
-// import Nikitha from "../../assets/profiles/Non_BG/IoT_04.png";
+// import Rakshu from "../../assets/profiles/Non_BG/GASC/IoT_01.png";
+// import Bhooshitha from "../../assets/profiles/Non_BG/GASC/IoT_02.png";
+// import Dhanalakshmi from "../../assets/profiles/Non_BG/GASC/IoT_03.png";
+// import Nikitha from "../../assets/profiles/Non_BG/GASC/IoT_04.png";
 
-// import Arshath from "../../assets/profiles/Non_BG/CS_01.png";
-// import Nithyanandhan from "../../assets/profiles/Non_BG/CS_02.png";
+// import Arshath from "../../assets/profiles/Non_BG/GASC/CS_01.png";
+// import Nithyanandhan from "../../assets/profiles/Non_BG/GASC/CS_02.png";
 
 const students = [
   {
     name: "Raghu",
-    department: "Department of Artificial Intelligence",
+    department: "Department of Artificial Intelligence & Data Science",
     degree: "B.Sc. CS AI & DS",
     email: "mailto:raghu@example.com",
     year: "Year 1",
@@ -71,7 +71,7 @@ const students = [
   },
   {
     name: "Jaiganesh",
-    department: "Department of Artificial Intelligence",
+    department: "Department of Artificial Intelligence & Data Science",
     degree: "B.Sc. CS AI & DS",
     email: "mailto:jaiganesh.d@example.com",
     year: "Year 1",
@@ -86,7 +86,7 @@ const students = [
   },
   {
     name: "Akash Deep",
-    department: "Department of Artificial Intelligence",
+    department: "Department of Artificial Intelligence & Data Science",
     degree: "B.Sc. CS AI & DS",
     email: "mailto:akash.deep@example.com",
     year: "Year 1",
@@ -101,7 +101,7 @@ const students = [
   },
   {
     name: "Pavithra",
-    department: "Department of Artificial Intelligence",
+    department: "Department of Artificial Intelligence & Data Science",
     degree: "B.Sc. CS AI & DS",
     email: "mailto:pavithra@example.com",
     year: "Year 1",
@@ -116,7 +116,7 @@ const students = [
   },
   {
     name: "Kabhini",
-    department: "Department of Artificial Intelligence",
+    department: "Department of Artificial Intelligence & Data Science",
     degree: "B.Sc. CS AI & DS",
     email: "mailto:kabhini@example.com",
     year: "Year 1",
@@ -131,7 +131,7 @@ const students = [
   },
   {
     name: "Abinesh",
-    department: "Department of Artificial Intelligence",
+    department: "Department of Artificial Intelligence & Data Science",
     degree: "B.Sc. CS AI & DS",
     email: "mailto:abinesh@example.com",
     year: "Year 1",
@@ -146,7 +146,7 @@ const students = [
   },
   {
     name: "Hari Haran",
-    department: "Department of Artificial Intelligence",
+    department: "Department of Artificial Intelligence & Data Science",
     degree: "B.Sc. CS AI & DS",
     email: "mailto:hari.haran@example.com",
     year: "Year 1",
@@ -161,7 +161,7 @@ const students = [
   },
   {
     name: "Ranjith",
-    department: "Department of Artificial Intelligence",
+    department: "Department of Artificial Intelligence & Data Science",
     degree: "B.Sc. CS AI & DS",
     email: "mailto:ranjith@example.com",
     year: "Year 1",
@@ -176,7 +176,7 @@ const students = [
   },
   {
     name: "Kaviya",
-    department: "Department of Artificial Intelligence",
+    department: "Department of Artificial Intelligence & Data Science",
     degree: "B.Sc. CS AI & DS",
     email: "mailto:kaviya@example.com",
     year: "Year 1",
@@ -357,7 +357,7 @@ const StudentCard = ({ student }) => (
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
   >
-    <div className="relative w-full h-48">
+    <div className="relative w-full h-96">
       <img
         src={student.image}
         alt={student.name}

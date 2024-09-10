@@ -6,62 +6,75 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 
-import iBOY from "../../assets/img/iboy.png";
-import iGIRl from "../../assets/img/igirl.png";
-
 // With BG Image
-// import Dhanush from "../../assets/profiles/BG/EM_01.jpg";
-// import Karthick from "../../assets/profiles/Non_BG/EM_02.png";
+// import Dhanush from "../../assets/profiles/BG/GASC/EM_01.jpg";
+// import Karthick from "../../assets/profiles/Non_BG/GASC/EM_02.png";
 
-// import Jai from "../../assets/profiles/BG/AI_01-0.jpg";
-// import Raghu from "../../assets/profiles/BG/AI_02.jpg";
-// import Akash from "../../assets/profiles/BG/AI_03.jpg";
-// import Abi from "../../assets/profiles/BG/AI_04.jpg";
-// import Ranji from "../../assets/profiles/BG/AI_05.jpg";
-// import Hari from "../../assets/profiles/BG/AI_06.jpg";
-// import Kabhi from "../../assets/profiles/BG/AI_07.jpg";
-// import Pavi from "../../assets/profiles/BG/AI_08.jpg";
-// import Kaviya from "../../assets/profiles/BG/AI_09.jpg";
+// import Jai from "../../assets/profiles/BG/GASC/AI_01-0.jpg";
+// import Raghu from "../../assets/profiles/BG/GASC/AI_02.jpg";
+// import Akash from "../../assets/profiles/BG/GASC/AI_03.jpg";
+// import Abi from "../../assets/profiles/BG/GASC/AI_04.jpg";
+// import Ranji from "../../assets/profiles/BG/GASC/AI_05.jpg";
+// import Hari from "../../assets/profiles/BG/GASC/AI_06.jpg";
+// import Kabhi from "../../assets/profiles/BG/GASC/AI_07.jpg";
+// import Pavi from "../../assets/profiles/BG/GASC/AI_08.jpg";
+// import Kaviya from "../../assets/profiles/BG/GASC/AI_09.jpg";
 
-// import Logesh from "../../assets/profiles/BG/BCA_01.jpg";
-// import Monish from "../../assets/profiles/BG/BCA_02.jpg";
-// import Sharmitha from "../../assets/profiles/BG/BCA_03.jpg";
-// import Poomalar from "../../assets/profiles/BG/BCA_04.jpg";
+// import Logesh from "../../assets/profiles/BG/GASC/BCA_01.jpg";
+// import Monish from "../../assets/profiles/BG/GASC/BCA_02.jpg";
+// import Sharmitha from "../../assets/profiles/BG/GASC/BCA_03.jpg";
+// import Poomalar from "../../assets/profiles/BG/GASC/BCA_04.jpg";
 
-// import Rakshu from "../../assets/profiles/BG/IoT_01.jpg";
-// import Bhooshitha from "../../assets/profiles/BG/IoT_02.jpg";
-// import Dhanalakshmi from "../../assets/profiles/BG/IoT_03.jpg";
-// import Nikitha from "../../assets/profiles/BG/IoT_04.jpg";
+// import Rakshu from "../../assets/profiles/BG/GASC/IoT_01.jpg";
+// import Bhooshitha from "../../assets/profiles/BG/GASC/IoT_02.jpg";
+// import Dhanalakshmi from "../../assets/profiles/BG/GASC/IoT_03.jpg";
+// import Nikitha from "../../assets/profiles/BG/GASC/IoT_04.jpg";
 
-// import Arshath from "../../assets/profiles/BG/CS_01.jpg";
-// import Nithyanandhan from "../../assets/profiles/BG/CS_02.jpg";
+// import Arshath from "../../assets/profiles/BG/GASC/CS_01.jpg";
+// import Nithyanandhan from "../../assets/profiles/BG/GASC/CS_02.jpg";
+
+// import DURGA from "../../assets/profiles/BG/KSR/AI_01.png";
+// import GOKILA from "../../assets/profiles/BG/KSR/AI_02.png";
+// import SANDHIYA from "../../assets/profiles/BG/KSR/AI_03.png";
+// import SHAKTHEE from "../../assets/profiles/BG/KSR/AI_04.png";
+
+// import SRIDHARAN from "../../assets/profiles/BG/KSR/ML_01.png";
+// import VARATHARAJAN from "../../assets/profiles/BG/KSR/ML_02.png";
 
 // Without BG Image
-import Dhanush from "../../assets/profiles/Non_BG/EM_01.png";
-import Karthick from "../../assets/profiles/Non_BG/EM_02.png";
+import Dhanush from "../../assets/profiles/Non_BG/GASC/EM_01.png";
+import Karthick from "../../assets/profiles/Non_BG/GASC/EM_02.png";
 
-import Jai from "../../assets/profiles/Non_BG/AI_01-0.png";
-import Raghu from "../../assets/profiles/Non_BG/AI_02.png";
-import Akash from "../../assets/profiles/Non_BG/AI_03.png";
-import Abi from "../../assets/profiles/Non_BG/AI_04.png";
-import Ranji from "../../assets/profiles/Non_BG/AI_05.png";
-import Hari from "../../assets/profiles/Non_BG/AI_06.png";
-import Kabhi from "../../assets/profiles/Non_BG/AI_07.png";
-import Pavi from "../../assets/profiles/Non_BG/AI_08.png";
-import Kaviya from "../../assets/profiles/Non_BG/AI_09.png";
+import Jai from "../../assets/profiles/Non_BG/GASC/AI_01-0.png";
+import Raghu from "../../assets/profiles/Non_BG/GASC/AI_02.png";
+import Akash from "../../assets/profiles/Non_BG/GASC/AI_03.png";
+import Abi from "../../assets/profiles/Non_BG/GASC/AI_04.png";
+import Ranji from "../../assets/profiles/Non_BG/GASC/AI_05.png";
+import Hari from "../../assets/profiles/Non_BG/GASC/AI_06.png";
+import Kabhi from "../../assets/profiles/Non_BG/GASC/AI_07.png";
+import Pavi from "../../assets/profiles/Non_BG/GASC/AI_08.png";
+import Kaviya from "../../assets/profiles/Non_BG/GASC/AI_09.png";
 
-import Logesh from "../../assets/profiles/Non_BG/BCA_01.png";
-import Monish from "../../assets/profiles/Non_BG/BCA_02.png";
-import Sharmitha from "../../assets/profiles/Non_BG/BCA_03.png";
-import Poomalar from "../../assets/profiles/Non_BG/BCA_04.png";
+import Logesh from "../../assets/profiles/Non_BG/GASC/BCA_01.png";
+import Monish from "../../assets/profiles/Non_BG/GASC/BCA_02.png";
+import Sharmitha from "../../assets/profiles/Non_BG/GASC/BCA_03.png";
+import Poomalar from "../../assets/profiles/Non_BG/GASC/BCA_04.png";
 
-import Rakshu from "../../assets/profiles/Non_BG/IoT_01.png";
-import Bhooshitha from "../../assets/profiles/Non_BG/IoT_02.png";
-import Dhanalakshmi from "../../assets/profiles/Non_BG/IoT_03.png";
-import Nikitha from "../../assets/profiles/Non_BG/IoT_04.png";
+import Rakshu from "../../assets/profiles/Non_BG/GASC/IoT_01.png";
+import Bhooshitha from "../../assets/profiles/Non_BG/GASC/IoT_02.png";
+import Dhanalakshmi from "../../assets/profiles/Non_BG/GASC/IoT_03.png";
+import Nikitha from "../../assets/profiles/Non_BG/GASC/IoT_04.png";
 
-import Arshath from "../../assets/profiles/Non_BG/CS_01.png";
-import Nithyanandhan from "../../assets/profiles/Non_BG/CS_02.png";
+import Arshath from "../../assets/profiles/Non_BG/GASC/CS_01.png";
+import Nithyanandhan from "../../assets/profiles/Non_BG/GASC/CS_02.png";
+
+import DURGA from "../../assets/profiles/Non_BG/KSR/AI_01.png";
+import GOKILA from "../../assets/profiles/Non_BG/KSR/AI_02.png";
+import SANDHIYA from "../../assets/profiles/Non_BG/KSR/AI_03.png";
+import SHAKTHEE from "../../assets/profiles/Non_BG/KSR/AI_04.png";
+
+import SRIDHARAN from "../../assets/profiles/Non_BG/KSR/ML_01.png";
+import VARATHARAJAN from "../../assets/profiles/Non_BG/KSR/ML_02.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -74,8 +87,11 @@ const teams = [
         role: "AI & ML Developer",
         image: Dhanush,
         description: "Innovating AI solutions for a smarter world.",
-        socialMedia: { linkedin: "#", github: "#" },
-        contact: "itdhanush68@gmail.com"
+        socialMedia: {
+          linkedin: "https://www.linkedin.com/in/dhanushs-infotech",
+          github: "#"
+        },
+        contact: "mailto:itdhanush68@gmail.com"
       },
       {
         name: "Karthick ",
@@ -83,8 +99,11 @@ const teams = [
         image: Karthick,
         description:
           "Crafting intelligent systems with a passion for technology.",
-        socialMedia: { linkedin: "#", github: "#" },
-        contact: "tkarthick550@gmail.com"
+        socialMedia: {
+          linkedin: "https://www.linkedin.com/in/tkarthick28",
+          github: "#"
+        },
+        contact: "mailto:tkarthick550@gmail.com"
       }
     ]
   },
@@ -100,7 +119,7 @@ const teams = [
         socialMedia: {
           linkedin: "https://www.linkedin.com/in/akash-deep-7624b9298"
         },
-        contact: "AkashdeepInsights@outlook.com"
+        contact: "mailto:AkashdeepInsights@outlook.com"
       },
       {
         name: "Raghu ",
@@ -112,7 +131,7 @@ const teams = [
         socialMedia: {
           linkedin: "https://www.linkedin.com/in/raghu-a-a12275238"
         },
-        contact: "raghuarunkumar30@gmail.com"
+        contact: "mailto:raghuarunkumar30@gmail.com"
       },
       {
         name: "Jaiganesh ",
@@ -125,7 +144,7 @@ const teams = [
           linkedin: "https://www.linkedin.com/in/jaiganesh-d-0184a6325/",
           github: "https://github.com/iBOYJAI"
         },
-        contact: "jaiganeshd27@gmail.com"
+        contact: "mailto:jaiganeshd27@gmail.com"
       },
       {
         name: "Logesh ",
@@ -135,7 +154,7 @@ const teams = [
         socialMedia: {
           linkedin: "https://www.linkedin.com/in/loges-waran-k-1152682aa"
         },
-        contact: "LogeswaranKuppusamy@outlook.com"
+        contact: "mailto:LogeswaranKuppusamy@outlook.com"
       },
       {
         name: "Arshath ",
@@ -145,7 +164,7 @@ const teams = [
         socialMedia: {
           linkedin: "https://www.linkedin.com/in/arshath-s-a923b2290"
         },
-        contact: "arshathsheikabdullah@gmail.com"
+        contact: "mailto:arshathsheikabdullah@gmail.com"
       },
       {
         name: "Pavithra ",
@@ -155,7 +174,7 @@ const teams = [
         socialMedia: {
           linkedin: "https://www.linkedin.com/in/pavithra-kathirvel-a60248302"
         },
-        contact: "pavithrakathirvel@outlook.com"
+        contact: "mailto:pavithrakathirvel@outlook.com"
       },
       {
         name: "Kabhini ",
@@ -165,7 +184,7 @@ const teams = [
         socialMedia: {
           linkedin: "https://www.linkedin.com/in/kabhini-arumugam-2097b6302"
         },
-        contact: "kabhiniinfotech@gmail.com"
+        contact: "mailto:kabhiniinfotech@gmail.com"
       },
       {
         name: "Rakshana Devi ",
@@ -175,7 +194,7 @@ const teams = [
         socialMedia: {
           linkedin: "https://www.linkedin.com/in/rakshu-offcial-034653312"
         },
-        contact: "rakshuoffical@gamil.com"
+        contact: "mailto:rakshuoffical@gamil.com"
       },
       {
         name: "Bhooshitha ",
@@ -185,10 +204,11 @@ const teams = [
         socialMedia: {
           linkedin: "https://www.linkedin.com/in/bhooshitha-keseven-b33556324"
         },
-        contact: "bhooshithakeseven@gamil.com"
+        contact: "mailto:bhooshithakeseven@gamil.com"
       }
     ]
   },
+
   {
     teamName: "Medical Team",
     members: [
@@ -200,7 +220,7 @@ const teams = [
         socialMedia: {
           linkedin: "https://www.linkedin.com/in/abinesh-sp-8a54502ab"
         },
-        contact: "abineshprakash@outlook.com"
+        contact: "mailto:abineshprakash@outlook.com"
       },
       {
         name: "Monish S ",
@@ -210,7 +230,7 @@ const teams = [
         socialMedia: {
           linkedin: "https://www.linkedin.com/in/monish-s16"
         },
-        contact: "monishsadhasivam@outlook.com"
+        contact: "mailto:monishsadhasivam@outlook.com"
       },
       {
         name: "Hari Haran ",
@@ -220,7 +240,7 @@ const teams = [
         socialMedia: {
           linkedin: "https://www.linkedin.com/in/hari-hari-034500298"
         },
-        contact: "hariharan.tirupur@outlook.com"
+        contact: "mailto:hariharan.tirupur@outlook.com"
       },
       {
         name: "Ranjith  ",
@@ -230,7 +250,7 @@ const teams = [
         socialMedia: {
           linkedin: "https://www.linkedin.com/in/ranjith-n-0621b9319"
         },
-        contact: "ranjithnandhagopal@outlook.com"
+        contact: "mailto:ranjithnandhagopal@outlook.com"
       },
       {
         name: "Nithyanandhan  ",
@@ -240,7 +260,7 @@ const teams = [
         socialMedia: {
           linkedin: "https://www.linkedin.com/in/nithyanandhan-muthu-58281131a"
         },
-        contact: "nithyanandhanmuthu@gamil.com"
+        contact: "mailto:nithyanandhanmuthu@gamil.com"
       },
       {
         name: " Sharmitha",
@@ -250,7 +270,7 @@ const teams = [
         socialMedia: {
           linkedin: "https://www.linkedin.com/in/sharmitha-m-17055a324"
         },
-        contact: "sharmithamurugan@outlook.com"
+        contact: "mailto:sharmithamurugan@outlook.com"
       },
       {
         name: "Poomalar",
@@ -260,7 +280,7 @@ const teams = [
         socialMedia: {
           linkedin: "https://www.linkedin.com/in/poomalar-t-966b52323"
         },
-        contact: "poomalart@outlook.com"
+        contact: "mailto:poomalart@outlook.com"
       },
       {
         name: "Dhanalakshmi",
@@ -270,7 +290,7 @@ const teams = [
         socialMedia: {
           linkedin: "https://www.linkedin.com/in/dhana-kumar-13971a31a"
         },
-        contact: "dhanalakshmikumer@gmail.com"
+        contact: "mailto:dhanalakshmikumer@gmail.com"
       },
       {
         name: "Nikitha Sri",
@@ -280,7 +300,7 @@ const teams = [
         socialMedia: {
           linkedin: ""
         },
-        contact: "nikithasriayyasamy@gmail.com"
+        contact: "mailto:nikithasriayyasamy@gmail.com"
       },
       {
         name: "Kaviya ",
@@ -290,25 +310,95 @@ const teams = [
         socialMedia: {
           linkedin: "https://www.linkedin.com/in/kaviya-s-621b88302"
         },
-        contact: "kaviyasaravanan777@gmail.com"
+        contact: "mailto:kaviyasaravanan777@gmail.com"
+      }
+    ]
+  },
+
+  {
+    teamName: "AI Team",
+    members: [
+      {
+        name: "DURGA SARAVANAN",
+        role: "AI & DS Developer",
+        image: DURGA,
+        description:
+          "AI empowers machines, DS empowers insights, ML empowers decisions.",
+        socialMedia: {
+          linkedin: "https://www.linkedin.com/in/durga-saravanan-13b49a24b"
+        },
+        contact: "mailto:durgasaran2004@gmail.com"
+      },
+      {
+        name: "GOKILA R",
+        role: "AI & DS Developer",
+        image: GOKILA,
+        description: "Data is the fuel, AI is the engine, ML is the driver.",
+        socialMedia: {
+          linkedin: "https://www.linkedin.com/in/gokila-r-065a5b270"
+        },
+        contact: "mailto:gokilag812@gmail.com"
+      },
+      {
+        name: "SANDHIYA PERIYASAMY",
+        role: "AI & DS Developer",
+        image: SANDHIYA,
+        description:
+          "In AI, we trust the process, in data, we trust the facts.",
+        socialMedia: {
+          linkedin: "https://www.linkedin.com/in/sandhiya-p-65666624b/"
+        },
+        contact: "mailto:sandhiyaperiyasamy05@gmail.com"
+      },
+      {
+        name: "SHAKTHEE NIVEDHA K",
+        role: "AI & DS Developer",
+        image: SHAKTHEE,
+        description: "AI learns, DS informs, ML adapts.",
+        socialMedia: {
+          linkedin: "https://www.linkedin.com/in/shakthee-nivedha-k-48312727b/"
+        },
+        contact: "mailto:shaktheenivedha@gmail.com"
+      },
+      {
+        name: "SRIDHARAN",
+        role: "AI & ML Developer",
+        image: SRIDHARAN,
+        description: "AI predicts, DS interprets, ML evolves.",
+        socialMedia: {
+          linkedin: "https://www.linkedin.com/in/sridharan-vk-45b19b27b/"
+        },
+        contact: "mailto:sridharanvk123@gmail.com"
+      },
+      {
+        name: "VARATHARAJAN",
+        role: "AI & ML Developer",
+        image: VARATHARAJAN,
+        description: "Data shapes AI, AI refines data.",
+        socialMedia: {
+          linkedin: "https://www.linkedin.com/in/varatharajan-k-v-278340292/"
+        },
+        contact: "mailto:varatha9500@gmail.com"
       }
     ]
   }
 ];
 
 const teamColors = {
-  "Employee Team": "#c8c8c8", // Light cyan
-  "Agri Team": "#c5ffc4", // Light green
-  "Medical Team": "#c2cdff" // Light pink
+  "Employee Team": "#c8c8c8",
+  "Agri Team": "#c5ffc4",
+  "Medical Team": "#c2cdff",
+  "AI Team": "#f2e7ff"
 };
 
 const teamBorderColors = {
-  "Employee Team": "#ffcfa5", // Light cyan
-  "Agri Team": "#dbffc4", // Light green
-  "Medical Team": "#a6a9ff" // Light pink
+  "Employee Team": "#ffcfa5",
+  "Agri Team": "#dbffc4",
+  "Medical Team": "#a6a9ff",
+  "AI Team": "#c69ae6"
 };
 
-const EAM_Team = () => {
+const EAMA_Team = () => {
   const [selectedMember, setSelectedMember] = useState(null);
 
   useEffect(() => {
@@ -416,7 +506,7 @@ const EAM_Team = () => {
                     }}
                   />
                   <div className="mt-8">
-                    <h3 className="text-xl md:text-2xl font-medium">
+                    <h3 className="text-xl md:text-2xl font-medium first-letter:capitalize lowercase">
                       {member.name}
                     </h3>
                     <p className="text-sm md:text-base">{member.role}</p>
@@ -536,4 +626,4 @@ const EAM_Team = () => {
   );
 };
 
-export default EAM_Team;
+export default EAMA_Team;

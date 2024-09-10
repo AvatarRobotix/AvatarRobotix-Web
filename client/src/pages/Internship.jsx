@@ -91,8 +91,8 @@ const Internship = () => {
             variants={textAnimation}
             className="relative cursor-pointer p-6 md:p-8 bg-[#b4a0ff] bg-opacity-70 backdrop-blur-md rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
           >
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-normal mb-4 text-gray-800">
-              KSR College, Tiruchengode
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-normal  mb-4 text-gray-800">
+              K.S. Rangasamy College of Technology (KSRCT), Tiruchengode
             </h2>
             <p className="text-sm md:text-base lg:text-lg leading-relaxed mb-6 text-gray-600">
               Explore our partnership with KSR College...
@@ -152,7 +152,7 @@ const Internship = () => {
           className="text-center"
         >
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-light mb-6">
-            KSR College, Tiruchengode
+            K.S. Rangasamy College of Technology (KSRCT), Tiruchengode
           </h1>
           <p className="text-base md:text-lg lg:text-xl leading-relaxed mx-auto max-w-7xl">
             At <span className="font-bold">Avatar Robotix</span>, we value the
