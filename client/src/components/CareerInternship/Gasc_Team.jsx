@@ -13,7 +13,7 @@ import Abi from "../../assets/profiles/BG/GASC/AI_04.jpg";
 import Ranji from "../../assets/profiles/BG/GASC/AI_05.jpg";
 import Hari from "../../assets/profiles/BG/GASC/AI_06.jpg";
 import Kabhi from "../../assets/profiles/BG/GASC/AI_07.jpg";
-import Pavi from "../../assets/profiles/BG/GASC/AI_08.jpg";
+// import Pavi from "../../assets/profiles/BG/GASC/AI_08.jpg";
 // import Kaviya from "../../assets/profiles/BG/GASC/AI_09.jpg";
 
 import Logesh from "../../assets/profiles/BG/GASC/BCA_01.jpg";
@@ -37,7 +37,7 @@ import Jai from "../../assets/profiles/Non_BG/GASC/AI_01-1.png";
 // import Ranji from "../../assets/profiles/Non_BG/GASC/AI_05.png";
 // import Hari from "../../assets/profiles/Non_BG/GASC/AI_06.png";
 // import Kabhi from "../../assets/profiles/Non_BG/GASC/AI_07.png";
-// import Pavi from "../../assets/profiles/Non_BG/GASC/AI_08.png";
+import Pavi from "../../assets/profiles/Non_BG/GASC/AI_08.png";
 import Kaviya from "../../assets/profiles/Non_BG/GASC/AI_09.png";
 
 // import Logesh from "../../assets/profiles/Non_BG/GASC/BCA_01.png";
