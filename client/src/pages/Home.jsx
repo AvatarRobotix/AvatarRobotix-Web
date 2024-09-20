@@ -66,10 +66,10 @@ const Home = () => {
             autoPlay
             muted
             loop
-            className="absolute inset-0 w-full h-full object-cover -mt-18"
+            className="absolute inset-0 w-full h-full object-cover -mt-20"
           ></video>
         )}
-        <div className="relative z-10 mb-40 sm:mb-24 md:mb-32 lg:mb-32 xl:mb-32 pb-8 rounded-lg max-w-4xl mx-auto">
+        <div className="relative z-10 mb-40 sm:mb-24 md:mb-32 lg:mb-32 xl:mb-60 pb-8 rounded-lg max-w-4xl mx-auto">
           <div className="flex flex-col md:flex-row md:justify-center space-y-4 md:space-y-0 md:space-x-8">
             <h1 className="text-lg sm:text-2xl md:text-xl font-medium uppercase">
               Innovation
